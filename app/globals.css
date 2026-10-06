@@ -1,26 +1,58 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --lipa-maroon: #7a1313;
+  --lipa-maroon-dark: #560a0a;
+  --lipa-maroon-light: #941e1e;
+  --lipa-gold: #c68a18;
+  --lipa-gold-hover: #b37910;
+  --lipa-gold-light: #fef3c7;
+  --lipa-navy: #0e274a;
+  --lipa-blue: #1a365d;
+  --lipa-rescue-orange: #ea580c;
+  --lipa-rescue-orange-hover: #c2410c;
+  --background: #fbfbfa;
+  --foreground: #1c1917;
 }
 
-@theme inline {
+@theme {
+  --color-lipa-maroon: var(--lipa-maroon);
+  --color-lipa-maroon-dark: var(--lipa-maroon-dark);
+  --color-lipa-maroon-light: var(--lipa-maroon-light);
+  --color-lipa-gold: var(--lipa-gold);
+  --color-lipa-gold-hover: var(--lipa-gold-hover);
+  --color-lipa-gold-light: var(--lipa-gold-light);
+  --color-lipa-navy: var(--lipa-navy);
+  --color-lipa-blue: var(--lipa-blue);
+  --color-rescue-orange: var(--lipa-rescue-orange);
+  --color-rescue-orange-hover: var(--lipa-rescue-orange-hover);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #7a1313;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #560a0a;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
 }
