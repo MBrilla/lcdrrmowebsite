@@ -1,23 +1,12 @@
 import React from "react";
 import Link from "next/link";
-import {
-  PhoneCall,
-  ShieldCheck,
-  Activity,
-  CloudRain,
-  Users,
-  CheckCircle2,
-  ArrowRight,
-  MapPin,
-  Clock,
-  Radio,
-} from "lucide-react";
 import LipaLogo from "@/components/LipaLogo";
+import { SHOW_MINIMAL_PROGRESS } from "@/lib/siteConfig";
 
 export default function Home() {
   return (
     <div className="w-full">
-      {/* Clean Hero Section - Lipa Maroon */}
+      {/* Hero Section */}
       <section className="bg-[#7a1313] text-white py-12 sm:py-16 border-b-2 border-[#c68a18]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
@@ -35,192 +24,204 @@ export default function Home() {
                 Coordinating city-wide disaster prevention, community preparedness, 24/7 emergency rescue operations, and post-disaster recovery for the 72 barangays of Lipa City.
               </p>
 
-              <div className="flex flex-wrap items-center gap-3 pt-2">
-                <Link
-                  href="/hotlines"
-                  className="bg-[#c68a18] hover:bg-[#b37910] text-slate-950 font-bold text-xs sm:text-sm px-5 py-2.5 rounded flex items-center gap-2 transition-colors"
-                >
-                  <PhoneCall className="w-4 h-4" />
-                  <span>Emergency Hotlines</span>
-                </Link>
+              {!SHOW_MINIMAL_PROGRESS ? (
+                <div className="flex flex-wrap items-center gap-3 pt-2">
+                  <Link
+                    href="/hotlines"
+                    className="bg-[#c68a18] hover:bg-[#b37910] text-slate-950 font-bold text-xs sm:text-sm px-5 py-2.5 rounded transition-colors"
+                  >
+                    Emergency Hotlines
+                  </Link>
 
-                <Link
-                  href="#pillars"
-                  className="bg-white/10 hover:bg-white/20 text-white font-semibold text-xs sm:text-sm px-4 py-2.5 rounded border border-white/20 transition-colors"
-                >
-                  The 4 DRRM Pillars
-                </Link>
+                  <Link
+                    href="#pillars"
+                    className="bg-white/10 hover:bg-white/20 text-white font-semibold text-xs sm:text-sm px-4 py-2.5 rounded border border-white/20 transition-colors"
+                  >
+                    The 4 DRRM Pillars
+                  </Link>
 
-                <Link
-                  href="#about"
-                  className="text-amber-200 hover:text-white font-medium text-xs sm:text-sm px-2 py-2.5 transition-colors flex items-center gap-1"
-                >
-                  <span>About Our Office</span>
-                  <ArrowRight className="w-3.5 h-3.5" />
-                </Link>
-              </div>
+                  <Link
+                    href="#about"
+                    className="text-amber-200 hover:text-white font-medium text-xs sm:text-sm px-2 py-2.5 transition-colors"
+                  >
+                    About Our Office
+                  </Link>
+                </div>
+              ) : (
+                <div className="flex flex-wrap items-center gap-3 pt-2">
+                  <Link
+                    href="#about"
+                    className="bg-[#c68a18] hover:bg-[#b37910] text-slate-950 font-bold text-xs sm:text-sm px-5 py-2.5 rounded transition-colors"
+                  >
+                    About Our Office
+                  </Link>
+                </div>
+              )}
             </div>
 
-            {/* Right Card: Operations Center Summary */}
+            {/* Right Card */}
             <div className="lg:col-span-4">
-              <div className="bg-white text-slate-900 rounded-lg p-5 border border-slate-200 shadow-xs space-y-3">
-                <div className="flex items-center gap-3 pb-3 border-b border-slate-100">
-                  <LipaLogo className="w-12 h-12" />
-                  <div>
-                    <div className="text-[11px] font-bold uppercase text-[#7a1313]">
-                      Lipa Rescue 24/7
+              {!SHOW_MINIMAL_PROGRESS ? (
+                <div className="bg-white text-slate-900 rounded p-5 border border-slate-200 shadow-xs space-y-3">
+                  <div className="flex items-center gap-3 pb-3 border-b border-slate-100">
+                    <LipaLogo className="w-12 h-12" />
+                    <div>
+                      <div className="text-[11px] font-bold uppercase text-[#7a1313]">
+                        Lipa Rescue 24/7
+                      </div>
+                      <div className="text-sm font-bold text-slate-900">
+                        Emergency Operations Center
+                      </div>
                     </div>
-                    <div className="text-sm font-bold text-slate-900">
-                      Emergency Operations Center
+                  </div>
+
+                  <div className="space-y-1.5 text-xs text-slate-700">
+                    <div><strong>Address:</strong> Lipa City Hall Complex, Marawoy</div>
+                    <div><strong>Hours:</strong> 24 Hours / 7 Days On-Duty</div>
+                    <div><strong>Radio Net:</strong> 142.850 MHz</div>
+                  </div>
+
+                  <div className="pt-2 border-t border-slate-100">
+                    <div className="text-[11px] text-slate-500 font-medium">Direct Line:</div>
+                    <div className="text-base font-bold font-mono text-[#7a1313]">
+                      (043) 756-0127 / 0915-463-5005
                     </div>
                   </div>
-                </div>
 
-                <div className="space-y-2 text-xs text-slate-700">
-                  <div className="flex items-start gap-2">
-                    <MapPin className="w-3.5 h-3.5 text-[#c68a18] shrink-0 mt-0.5" />
-                    <span>Lipa City Hall Complex, Marawoy, Lipa City</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Clock className="w-3.5 h-3.5 text-[#c68a18] shrink-0" />
-                    <span>24 Hours / 7 Days On-Duty</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Radio className="w-3.5 h-3.5 text-[#c68a18] shrink-0" />
-                    <span>Radio Net: 142.850 MHz</span>
-                  </div>
+                  <Link
+                    href="/hotlines"
+                    className="block text-center text-xs font-semibold text-[#7a1313] hover:underline pt-1"
+                  >
+                    View All Emergency Numbers &rarr;
+                  </Link>
                 </div>
-
-                <div className="pt-2 border-t border-slate-100">
-                  <div className="text-[11px] text-slate-500 font-medium">Direct Line:</div>
-                  <div className="text-base font-bold font-mono text-[#7a1313]">
-                    (043) 756-0127 / 0915-463-5005
+              ) : (
+                <div className="bg-white/10 border border-white/20 rounded p-5 text-white space-y-3">
+                  <div className="flex items-center gap-3 pb-3 border-b border-white/20">
+                    <LipaLogo className="w-12 h-12" />
+                    <div>
+                      <div className="text-[11px] font-bold uppercase text-amber-300">
+                        Portal Development
+                      </div>
+                      <div className="text-sm font-bold text-white">
+                        Phase 1 Setup
+                      </div>
+                    </div>
                   </div>
+                  <p className="text-xs text-slate-200 leading-relaxed">
+                    Official web portal for disaster risk reduction coordination and public information in Lipa City.
+                  </p>
                 </div>
-
-                <Link
-                  href="/hotlines"
-                  className="block text-center text-xs font-semibold text-[#7a1313] hover:underline pt-1"
-                >
-                  View All Emergency Numbers &rarr;
-                </Link>
-              </div>
+              )}
             </div>
           </div>
         </div>
       </section>
 
-      {/* Core Public Safety Services */}
-      <section id="services" className="py-12 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-8">
-            <h2 className="text-xs uppercase font-bold text-[#7a1313] tracking-wider">
-              Department Services
-            </h2>
-            <p className="text-xl sm:text-2xl font-bold text-slate-900 mt-0.5">
-              Public Safety &amp; Emergency Assistance
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            <div className="p-4 rounded-lg border border-slate-200 bg-slate-50 space-y-2">
-              <div className="w-9 h-9 rounded bg-[#7a1313] text-white flex items-center justify-center">
-                <ShieldCheck className="w-5 h-5" />
+      {/* Core Public Safety Services & Thematic Pillars (Hidden in Minimal Progress Mode) */}
+      {!SHOW_MINIMAL_PROGRESS && (
+        <>
+          {/* Core Public Safety Services */}
+          <section id="services" className="py-12 bg-white">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="mb-8">
+                <h2 className="text-xs uppercase font-bold text-[#7a1313] tracking-wider">
+                  Department Services
+                </h2>
+                <p className="text-xl sm:text-2xl font-bold text-slate-900 mt-0.5">
+                  Public Safety &amp; Emergency Assistance
+                </p>
               </div>
-              <h3 className="font-bold text-slate-900 text-sm">Emergency Rescue</h3>
-              <p className="text-slate-600 text-xs leading-relaxed">
-                24/7 response for vehicular incidents, search and rescue, flood extraction, and emergency incidents.
-              </p>
-            </div>
 
-            <div className="p-4 rounded-lg border border-slate-200 bg-slate-50 space-y-2">
-              <div className="w-9 h-9 rounded bg-[#7a1313] text-white flex items-center justify-center">
-                <Activity className="w-5 h-5" />
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                <div className="p-4 rounded border border-slate-200 bg-slate-50 space-y-2">
+                  <h3 className="font-bold text-slate-900 text-sm">Emergency Rescue</h3>
+                  <p className="text-slate-600 text-xs leading-relaxed">
+                    24/7 response for vehicular incidents, search and rescue, flood extraction, and emergency incidents.
+                  </p>
+                </div>
+
+                <div className="p-4 rounded border border-slate-200 bg-slate-50 space-y-2">
+                  <h3 className="font-bold text-slate-900 text-sm">Ambulance Transport</h3>
+                  <p className="text-slate-600 text-xs leading-relaxed">
+                    Emergency medical care and patient transport to hospitals and medical facilities in Lipa City.
+                  </p>
+                </div>
+
+                <div className="p-4 rounded border border-slate-200 bg-slate-50 space-y-2">
+                  <h3 className="font-bold text-slate-900 text-sm">Weather &amp; Hazard Advisory</h3>
+                  <p className="text-slate-600 text-xs leading-relaxed">
+                    Continuous tracking of PAGASA weather bulletins, rainfall, flood levels, and Taal Volcano status.
+                  </p>
+                </div>
+
+                <div className="p-4 rounded border border-slate-200 bg-slate-50 space-y-2">
+                  <h3 className="font-bold text-slate-900 text-sm">Community DRRM Training</h3>
+                  <p className="text-slate-600 text-xs leading-relaxed">
+                    First aid, basic life support (BLS), earthquake drills, and disaster seminars for schools and barangays.
+                  </p>
+                </div>
               </div>
-              <h3 className="font-bold text-slate-900 text-sm">Ambulance Transport</h3>
-              <p className="text-slate-600 text-xs leading-relaxed">
-                Emergency medical care and patient transport to hospitals and medical facilities in Lipa City.
-              </p>
             </div>
+          </section>
 
-            <div className="p-4 rounded-lg border border-slate-200 bg-slate-50 space-y-2">
-              <div className="w-9 h-9 rounded bg-[#7a1313] text-white flex items-center justify-center">
-                <CloudRain className="w-5 h-5" />
+          {/* The 4 Thematic Pillars */}
+          <section id="pillars" className="py-12 bg-slate-50 border-t border-slate-200">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="mb-8">
+                <h2 className="text-xs uppercase font-bold text-[#7a1313] tracking-wider">
+                  Legal Framework (R.A. 10121)
+                </h2>
+                <p className="text-xl sm:text-2xl font-bold text-slate-900 mt-0.5">
+                  The Four DRRM Thematic Areas
+                </p>
               </div>
-              <h3 className="font-bold text-slate-900 text-sm">Weather &amp; Hazard Advisory</h3>
-              <p className="text-slate-600 text-xs leading-relaxed">
-                Continuous tracking of PAGASA weather bulletins, rainfall, flood levels, and Taal Volcano status.
-              </p>
-            </div>
 
-            <div className="p-4 rounded-lg border border-slate-200 bg-slate-50 space-y-2">
-              <div className="w-9 h-9 rounded bg-[#7a1313] text-white flex items-center justify-center">
-                <Users className="w-5 h-5" />
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                <div className="bg-white p-5 rounded border-t-4 border-blue-700 border-x border-b border-slate-200 space-y-2">
+                  <div className="text-[11px] font-bold text-blue-800 uppercase">Pillar 1</div>
+                  <h3 className="font-bold text-slate-900 text-sm">
+                    Prevention &amp; Mitigation
+                  </h3>
+                  <p className="text-slate-600 text-xs leading-relaxed">
+                    Measures to avoid hazards and reduce vulnerability through hazard mapping, drainage review, and structural safety assessments.
+                  </p>
+                </div>
+
+                <div className="bg-white p-5 rounded border-t-4 border-amber-600 border-x border-b border-slate-200 space-y-2">
+                  <div className="text-[11px] font-bold text-amber-800 uppercase">Pillar 2</div>
+                  <h3 className="font-bold text-slate-900 text-sm">
+                    Disaster Preparedness
+                  </h3>
+                  <p className="text-slate-600 text-xs leading-relaxed">
+                    Strengthening barangay disaster readiness, early warning communication, resource stockpiling, and regular community drills.
+                  </p>
+                </div>
+
+                <div className="bg-white p-5 rounded border-t-4 border-red-700 border-x border-b border-slate-200 space-y-2">
+                  <div className="text-[11px] font-bold text-red-800 uppercase">Pillar 3</div>
+                  <h3 className="font-bold text-slate-900 text-sm">
+                    Disaster Response
+                  </h3>
+                  <p className="text-slate-600 text-xs leading-relaxed">
+                    Rapid emergency activation, incident command coordination, search and rescue deployment, and evacuation management.
+                  </p>
+                </div>
+
+                <div className="bg-white p-5 rounded border-t-4 border-emerald-700 border-x border-b border-slate-200 space-y-2">
+                  <div className="text-[11px] font-bold text-emerald-800 uppercase">Pillar 4</div>
+                  <h3 className="font-bold text-slate-900 text-sm">
+                    Rehabilitation &amp; Recovery
+                  </h3>
+                  <p className="text-slate-600 text-xs leading-relaxed">
+                    Post-disaster assessments, restoration of basic public lifelines, livelihood assistance, and resilient reconstruction.
+                  </p>
+                </div>
               </div>
-              <h3 className="font-bold text-slate-900 text-sm">Community DRRM Training</h3>
-              <p className="text-slate-600 text-xs leading-relaxed">
-                First aid, basic life support (BLS), earthquake drills, and disaster seminars for schools and barangays.
-              </p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* The 4 Thematic Pillars */}
-      <section id="pillars" className="py-12 bg-slate-50 border-t border-slate-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-8">
-            <h2 className="text-xs uppercase font-bold text-[#7a1313] tracking-wider">
-              Legal Framework (R.A. 10121)
-            </h2>
-            <p className="text-xl sm:text-2xl font-bold text-slate-900 mt-0.5">
-              The Four DRRM Thematic Areas
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            <div className="bg-white p-5 rounded-lg border-t-4 border-blue-700 border-x border-b border-slate-200 space-y-2">
-              <div className="text-[11px] font-bold text-blue-800 uppercase">Pillar 1</div>
-              <h3 className="font-bold text-slate-900 text-sm">
-                Prevention &amp; Mitigation
-              </h3>
-              <p className="text-slate-600 text-xs leading-relaxed">
-                Measures to avoid hazards and reduce vulnerability through hazard mapping, drainage review, and structural safety assessments.
-              </p>
-            </div>
-
-            <div className="bg-white p-5 rounded-lg border-t-4 border-amber-600 border-x border-b border-slate-200 space-y-2">
-              <div className="text-[11px] font-bold text-amber-800 uppercase">Pillar 2</div>
-              <h3 className="font-bold text-slate-900 text-sm">
-                Disaster Preparedness
-              </h3>
-              <p className="text-slate-600 text-xs leading-relaxed">
-                Strengthening barangay disaster readiness, early warning communication, resource stockpiling, and regular community drills.
-              </p>
-            </div>
-
-            <div className="bg-white p-5 rounded-lg border-t-4 border-red-700 border-x border-b border-slate-200 space-y-2">
-              <div className="text-[11px] font-bold text-red-800 uppercase">Pillar 3</div>
-              <h3 className="font-bold text-slate-900 text-sm">
-                Disaster Response
-              </h3>
-              <p className="text-slate-600 text-xs leading-relaxed">
-                Rapid emergency activation, incident command coordination, search and rescue deployment, and evacuation management.
-              </p>
-            </div>
-
-            <div className="bg-white p-5 rounded-lg border-t-4 border-emerald-700 border-x border-b border-slate-200 space-y-2">
-              <div className="text-[11px] font-bold text-emerald-800 uppercase">Pillar 4</div>
-              <h3 className="font-bold text-slate-900 text-sm">
-                Rehabilitation &amp; Recovery
-              </h3>
-              <p className="text-slate-600 text-xs leading-relaxed">
-                Post-disaster assessments, restoration of basic public lifelines, livelihood assistance, and resilient reconstruction.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+          </section>
+        </>
+      )}
 
       {/* About LCDRRMO Section */}
       <section id="about" className="py-12 bg-white border-t border-slate-200">
@@ -241,7 +242,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="lg:col-span-4 bg-slate-50 border border-slate-200 p-5 rounded-lg space-y-2 text-xs">
+            <div className="lg:col-span-4 bg-slate-50 border border-slate-200 p-5 rounded space-y-2 text-xs">
               <div className="font-bold text-slate-900 text-sm">Office Details</div>
               <div className="space-y-1 text-slate-600">
                 <div><strong>Agency:</strong> Lipa CDRRMO (Lipa Rescue)</div>
@@ -250,6 +251,39 @@ export default function Home() {
                 <div><strong>Location:</strong> City Hall Complex, Marawoy</div>
                 <div><strong>Coverage:</strong> 72 Barangays</div>
               </div>
+              <div className="pt-2 border-t border-slate-200">
+                <Link
+                  href="/organization"
+                  className="font-semibold text-[#7a1313] hover:underline block"
+                >
+                  View Organizational Chart &rarr;
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          {/* Vision and Mission Statements */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-6 mt-6 border-t border-slate-200">
+            {/* Vision */}
+            <div className="bg-slate-50 border border-slate-200 rounded p-5 space-y-2">
+              <h3 className="text-sm font-bold text-slate-900 uppercase tracking-wide border-b border-slate-200 pb-2">
+                Vision
+              </h3>
+              <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                An Economic and Cultural Hub of the Province, Home to empowered and God-Loving Lipenos, with a business-friendly environment that nurtures inclusive economic growth, equipped with resilient and sustainable infrastructures that protects the biodiversity and natural resources of the city, and inspired by transparent, effective and efficient leadership.
+              </p>
+            </div>
+
+            {/* Mission */}
+            <div className="bg-slate-50 border border-slate-200 rounded p-5 space-y-2">
+              <h3 className="text-sm font-bold text-slate-900 uppercase tracking-wide border-b border-slate-200 pb-2">
+                Mission
+              </h3>
+              <ol className="list-decimal list-inside space-y-2 text-xs sm:text-sm text-slate-700 leading-relaxed">
+                <li>To enhance the competencies of our people thereby achieving global competitiveness.</li>
+                <li>To establish a platform of governance through collaboration of all the sectors of the community.</li>
+                <li>To Provide Excellent Beneficial and accessible services towards a vibrant, Responsive and resilient Community.</li>
+              </ol>
             </div>
           </div>
         </div>

@@ -3,9 +3,10 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X, ChevronDown, PhoneCall } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import LipaLogo from "./LipaLogo";
 import PSTClock from "./PSTClock";
+import { SHOW_MINIMAL_PROGRESS } from "@/lib/siteConfig";
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -54,19 +55,21 @@ export default function Navbar() {
           </Link>
 
           {/* Quick Contact Info */}
-          <div className="hidden md:flex items-center gap-4 text-right">
-            <div className="border-l-2 border-slate-200 pl-4">
-              <div className="text-[11px] uppercase font-semibold text-slate-500">
-                24/7 Operations Center
-              </div>
-              <div className="text-sm font-bold text-slate-900">
-                (043) 756-0127 &bull; 0915-463-5005
-              </div>
-              <div className="text-xs text-slate-500">
-                Lipa City Hall Complex, Marawoy
+          {!SHOW_MINIMAL_PROGRESS && (
+            <div className="hidden md:flex items-center gap-4 text-right">
+              <div className="border-l-2 border-slate-200 pl-4">
+                <div className="text-[11px] uppercase font-semibold text-slate-500">
+                  24/7 Operations Center
+                </div>
+                <div className="text-sm font-bold text-slate-900">
+                  (043) 756-0127 &bull; 0915-463-5005
+                </div>
+                <div className="text-xs text-slate-500">
+                  Lipa City Hall Complex, Marawoy
+                </div>
               </div>
             </div>
-          </div>
+          )}
 
           {/* Mobile Menu Button */}
           <div className="flex md:hidden">
@@ -89,11 +92,10 @@ export default function Navbar() {
               <li>
                 <Link
                   href="/"
-                  className={`px-4 py-3 inline-block transition-colors ${
-                    pathname === "/"
+                  className={`px-4 py-3 inline-block transition-colors ${pathname === "/"
                       ? "bg-[#560a0a] text-amber-300 font-semibold border-b-2 border-amber-300"
                       : "hover:bg-[#560a0a] text-white"
-                  }`}
+                    }`}
                 >
                   Home
                 </Link>
@@ -103,54 +105,69 @@ export default function Navbar() {
                   href="/#about"
                   className="px-4 py-3 inline-block hover:bg-[#560a0a] transition-colors text-white"
                 >
-                  About LCDRRMO
+                  {SHOW_MINIMAL_PROGRESS ? "About (Draft)" : "About LCDRRMO"}
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/#pillars"
-                  className="px-4 py-3 inline-block hover:bg-[#560a0a] transition-colors text-white"
-                >
-                  The 4 DRRM Pillars
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/#services"
-                  className="px-4 py-3 inline-block hover:bg-[#560a0a] transition-colors text-white"
-                >
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/#advisories"
-                  className="px-4 py-3 inline-block hover:bg-[#560a0a] transition-colors text-white"
-                >
-                  Advisories & Alerts
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/hotlines"
-                  className={`px-4 py-3 inline-block transition-colors ${
-                    pathname === "/hotlines"
+                  href="/organization"
+                  className={`px-4 py-3 inline-block transition-colors ${pathname === "/organization"
                       ? "bg-[#560a0a] text-amber-300 font-semibold border-b-2 border-amber-300"
                       : "hover:bg-[#560a0a] text-white"
-                  }`}
+                    }`}
                 >
-                  Emergency Hotlines
+                  Organizational Chart
                 </Link>
               </li>
+              {!SHOW_MINIMAL_PROGRESS && (
+                <>
+                  <li>
+                    <Link
+                      href="/#pillars"
+                      className="px-4 py-3 inline-block hover:bg-[#560a0a] transition-colors text-white"
+                    >
+                      The 4 DRRM Pillars
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/#services"
+                      className="px-4 py-3 inline-block hover:bg-[#560a0a] transition-colors text-white"
+                    >
+                      Services
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/#advisories"
+                      className="px-4 py-3 inline-block hover:bg-[#560a0a] transition-colors text-white"
+                    >
+                      Advisories & Alerts
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/hotlines"
+                      className={`px-4 py-3 inline-block transition-colors ${pathname === "/hotlines"
+                          ? "bg-[#560a0a] text-amber-300 font-semibold border-b-2 border-amber-300"
+                          : "hover:bg-[#560a0a] text-white"
+                        }`}
+                    >
+                      Emergency Hotlines
+                    </Link>
+                  </li>
+                </>
+              )}
             </ul>
 
-            <Link
-              href="/hotlines"
-              className="bg-[#c68a18] hover:bg-[#b37910] text-slate-950 font-bold text-xs uppercase px-3.5 py-1.5 rounded flex items-center gap-1.5 transition-colors"
-            >
-              <PhoneCall className="w-3.5 h-3.5" />
-              <span>Hotlines Directory</span>
-            </Link>
+            {!SHOW_MINIMAL_PROGRESS && (
+              <Link
+                href="/hotlines"
+                className="bg-[#c68a18] hover:bg-[#b37910] text-slate-950 font-bold text-xs uppercase px-3.5 py-1.5 rounded inline-block transition-colors"
+              >
+                Hotlines Directory
+              </Link>
+            )}
           </div>
         </div>
       </nav>
@@ -162,9 +179,8 @@ export default function Navbar() {
             <Link
               href="/"
               onClick={() => setMobileMenuOpen(false)}
-              className={`block px-3 py-2 rounded ${
-                pathname === "/" ? "bg-[#7a1313] text-amber-300" : "hover:bg-slate-800"
-              }`}
+              className={`block px-3 py-2 rounded ${pathname === "/" ? "bg-[#7a1313] text-amber-300" : "hover:bg-slate-800"
+                }`}
             >
               Home
             </Link>
@@ -173,38 +189,49 @@ export default function Navbar() {
               onClick={() => setMobileMenuOpen(false)}
               className="block px-3 py-2 rounded hover:bg-slate-800"
             >
-              About LCDRRMO
+              {SHOW_MINIMAL_PROGRESS ? "About (Draft)" : "About LCDRRMO"}
             </Link>
             <Link
-              href="/#pillars"
+              href="/organization"
               onClick={() => setMobileMenuOpen(false)}
-              className="block px-3 py-2 rounded hover:bg-slate-800"
+              className={`block px-3 py-2 rounded ${pathname === "/organization" ? "bg-[#7a1313] text-amber-300" : "hover:bg-slate-800"
+                }`}
             >
-              The 4 DRRM Pillars
+              Organizational Chart
             </Link>
-            <Link
-              href="/#services"
-              onClick={() => setMobileMenuOpen(false)}
-              className="block px-3 py-2 rounded hover:bg-slate-800"
-            >
-              Services
-            </Link>
-            <Link
-              href="/#advisories"
-              onClick={() => setMobileMenuOpen(false)}
-              className="block px-3 py-2 rounded hover:bg-slate-800"
-            >
-              Advisories & Alerts
-            </Link>
-            <Link
-              href="/hotlines"
-              onClick={() => setMobileMenuOpen(false)}
-              className={`block px-3 py-2 rounded ${
-                pathname === "/hotlines" ? "bg-[#7a1313] text-amber-300" : "hover:bg-slate-800"
-              }`}
-            >
-              Emergency Hotlines
-            </Link>
+            {!SHOW_MINIMAL_PROGRESS && (
+              <>
+                <Link
+                  href="/#pillars"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="block px-3 py-2 rounded hover:bg-slate-800"
+                >
+                  The 4 DRRM Pillars
+                </Link>
+                <Link
+                  href="/#services"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="block px-3 py-2 rounded hover:bg-slate-800"
+                >
+                  Services
+                </Link>
+                <Link
+                  href="/#advisories"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="block px-3 py-2 rounded hover:bg-slate-800"
+                >
+                  Advisories & Alerts
+                </Link>
+                <Link
+                  href="/hotlines"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className={`block px-3 py-2 rounded ${pathname === "/hotlines" ? "bg-[#7a1313] text-amber-300" : "hover:bg-slate-800"
+                    }`}
+                >
+                  Emergency Hotlines
+                </Link>
+              </>
+            )}
           </div>
         </div>
       )}

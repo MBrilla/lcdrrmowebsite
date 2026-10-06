@@ -1,13 +1,33 @@
 import React from "react";
 import Link from "next/link";
-import { MapPin, Phone, Mail, Clock, ExternalLink } from "lucide-react";
 import LipaLogo from "./LipaLogo";
+import { SHOW_MINIMAL_PROGRESS } from "@/lib/siteConfig";
 
 export default function Footer() {
   return (
     <footer className="w-full bg-[#1c1917] text-slate-300 font-sans border-t-2 border-[#c68a18]">
       {/* Main Department Footer */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      {SHOW_MINIMAL_PROGRESS ? (
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+            <div className="flex items-center gap-3">
+              <LipaLogo className="w-10 h-10" />
+              <div>
+                <div className="text-[10px] uppercase font-bold text-amber-400">
+                  City Government of Lipa
+                </div>
+                <div className="text-sm font-bold text-white leading-tight">
+                  Disaster Risk Reduction and Management Office
+                </div>
+              </div>
+            </div>
+            <div className="text-slate-400 text-xs text-center sm:text-right">
+              Official Web Portal &bull; City Government of Lipa
+            </div>
+          </div>
+        </div>
+      ) : (
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-xs">
           {/* Col 1: Office Info */}
           <div className="space-y-3">
@@ -32,23 +52,15 @@ export default function Footer() {
             <h3 className="text-xs uppercase font-bold text-white tracking-wider border-b border-slate-700 pb-1.5">
               Operations Center
             </h3>
-            <div className="flex items-start gap-2 text-slate-300">
-              <MapPin className="w-4 h-4 text-[#c68a18] shrink-0 mt-0.5" />
-              <span>City Hall Complex, Marawoy, Lipa City, Batangas 4217</span>
-            </div>
-            <div className="flex items-center gap-2 text-slate-300">
-              <Clock className="w-4 h-4 text-[#c68a18] shrink-0" />
-              <span>Operations Center: 24/7 Active Standby</span>
-            </div>
-            <div className="flex items-center gap-2 text-slate-300">
-              <Phone className="w-4 h-4 text-[#c68a18] shrink-0" />
-              <span>Hotlines: (043) 756-0127 / 0915-463-5005</span>
-            </div>
-            <div className="flex items-center gap-2 text-slate-300">
-              <Mail className="w-4 h-4 text-[#c68a18] shrink-0" />
-              <a href="mailto:cdrrmo@lipa.gov.ph" className="hover:text-white">
-                cdrrmo@lipa.gov.ph
-              </a>
+            <div className="space-y-1.5 text-slate-300">
+              <div>City Hall Complex, Marawoy, Lipa City, Batangas 4217</div>
+              <div>Operations Center: 24/7 Active Standby</div>
+              <div>Hotlines: (043) 756-0127 / 0915-463-5005</div>
+              <div>
+                <a href="mailto:cdrrmo@lipa.gov.ph" className="hover:text-white underline">
+                  cdrrmo@lipa.gov.ph
+                </a>
+              </div>
             </div>
             <div className="pt-1">
               <Link
@@ -84,10 +96,9 @@ export default function Footer() {
                   href="https://lipa.gov.ph"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-amber-300 transition-colors flex items-center gap-1.5"
+                  className="hover:text-amber-300 transition-colors"
                 >
-                  <ExternalLink className="w-3 h-3 text-slate-500" />
-                  <span>City Government of Lipa</span>
+                  City Government of Lipa
                 </a>
               </li>
               <li>
@@ -95,10 +106,9 @@ export default function Footer() {
                   href="https://batangas.gov.ph"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-amber-300 transition-colors flex items-center gap-1.5"
+                  className="hover:text-amber-300 transition-colors"
                 >
-                  <ExternalLink className="w-3 h-3 text-slate-500" />
-                  <span>Province of Batangas</span>
+                  Province of Batangas
                 </a>
               </li>
               <li>
@@ -106,10 +116,9 @@ export default function Footer() {
                   href="https://ndrrmc.gov.ph"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-amber-300 transition-colors flex items-center gap-1.5"
+                  className="hover:text-amber-300 transition-colors"
                 >
-                  <ExternalLink className="w-3 h-3 text-slate-500" />
-                  <span>NDRRMC</span>
+                  NDRRMC
                 </a>
               </li>
               <li>
@@ -117,10 +126,9 @@ export default function Footer() {
                   href="https://bagong.pagasa.dost.gov.ph"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-amber-300 transition-colors flex items-center gap-1.5"
+                  className="hover:text-amber-300 transition-colors"
                 >
-                  <ExternalLink className="w-3 h-3 text-slate-500" />
-                  <span>DOST-PAGASA (Weather)</span>
+                  DOST-PAGASA (Weather)
                 </a>
               </li>
               <li>
@@ -128,16 +136,16 @@ export default function Footer() {
                   href="https://phivolcs.dost.gov.ph"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-amber-300 transition-colors flex items-center gap-1.5"
+                  className="hover:text-amber-300 transition-colors"
                 >
-                  <ExternalLink className="w-3 h-3 text-slate-500" />
-                  <span>DOST-PHIVOLCS (Seismic)</span>
+                  DOST-PHIVOLCS (Seismic)
                 </a>
               </li>
             </ul>
           </div>
         </div>
       </div>
+      )}
 
       {/* Standard Republic of the Philippines GOVPH Footer */}
       <div className="bg-[#0e274a] text-slate-400 text-[11px] py-4 px-4 sm:px-6 lg:px-8 border-t border-slate-800">
