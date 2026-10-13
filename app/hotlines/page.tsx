@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import type { Metadata } from "next";
-import { SHOW_MINIMAL_PROGRESS } from "@/lib/siteConfig";
+import { PAGES, FEATURES } from "@/lib/siteConfig";
 
 export const metadata: Metadata = {
   title: "Emergency Hotlines | Lipa City Disaster Risk Reduction & Management Office",
@@ -47,13 +47,13 @@ function ContactCard({
 
       <div className="space-y-1.5 my-3 pt-2 border-t border-slate-100">
         {numbers.map((item, idx) => (
-          <div key={idx} className="flex items-center justify-between text-xs py-1">
+          <div key={idx} className="flex flex-col sm:flex-row sm:items-center justify-between text-xs py-1.5 gap-1">
             <span className="text-slate-600 font-medium">{item.label}:</span>
             <a
               href={`tel:${item.link}`}
-              className="font-mono font-bold text-[#7a1313] hover:text-[#560a0a] hover:underline"
+              className="inline-flex items-center justify-center font-mono font-bold text-xs sm:text-sm text-[#7a1313] bg-red-50/60 hover:bg-red-100/80 px-2.5 py-1.5 rounded transition-colors"
             >
-              {item.number}
+              📞 {item.number}
             </a>
           </div>
         ))}
@@ -68,7 +68,7 @@ function ContactCard({
 }
 
 export default function HotlinesPage() {
-  if (SHOW_MINIMAL_PROGRESS) {
+  if (!PAGES.hotlines) {
     return (
       <div className="w-full bg-[#fbfbfa] py-12 sm:py-16">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">

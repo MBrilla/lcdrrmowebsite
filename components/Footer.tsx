@@ -1,13 +1,13 @@
 import React from "react";
 import Link from "next/link";
 import LipaLogo from "./LipaLogo";
-import { SHOW_MINIMAL_PROGRESS } from "@/lib/siteConfig";
+import { PAGES, FEATURES } from "@/lib/siteConfig";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-[#1c1917] text-slate-300 font-sans border-t-2 border-[#c68a18]">
+    <footer className="w-full bg-[#1c1917] text-slate-300 font-sans border-t-2 border-[#7a1313]">
       {/* Main Department Footer */}
-      {SHOW_MINIMAL_PROGRESS ? (
+      {!FEATURES.detailedFooter ? (
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
             <div className="flex items-center gap-3">
@@ -62,14 +62,16 @@ export default function Footer() {
                 </a>
               </div>
             </div>
-            <div className="pt-1">
-              <Link
-                href="/hotlines"
-                className="text-amber-300 hover:text-white font-semibold underline underline-offset-2"
-              >
-                View Complete Emergency Directory &rarr;
-              </Link>
-            </div>
+            {PAGES.hotlines && (
+              <div className="pt-1">
+                <Link
+                  href="/hotlines"
+                  className="text-amber-300 hover:text-white font-semibold underline underline-offset-2"
+                >
+                  View Complete Emergency Directory &rarr;
+                </Link>
+              </div>
+            )}
           </div>
 
           {/* Col 3: The 4 Pillars */}

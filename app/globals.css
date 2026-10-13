@@ -2,7 +2,7 @@
 
 :root {
   --lipa-maroon: #7a1313;
-  --lipa-maroon-dark: #560a0a;
+  --lipa-maroon-dark: #610f0f;
   --lipa-maroon-light: #941e1e;
   --lipa-gold: #c68a18;
   --lipa-gold-hover: #b37910;
@@ -11,7 +11,7 @@
   --lipa-blue: #1a365d;
   --lipa-rescue-orange: #ea580c;
   --lipa-rescue-orange-hover: #c2410c;
-  --background: #fbfbfa;
+  --background: #ffffff;
   --foreground: #1c1917;
 }
 
@@ -43,7 +43,7 @@
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #560a0a;
+  background: #610f0f;
 }
 
 /* Smooth scrolling */
