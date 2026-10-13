@@ -103,8 +103,8 @@ export default function Navbar() {
                 <Link
                   href="/"
                   className={`px-4 py-3 inline-block transition-colors ${pathname === "/"
-                      ? "bg-[#610f0f] text-white font-bold border-b-2 border-white"
-                      : "hover:bg-[#610f0f] text-white"
+                    ? "bg-[#610f0f] text-white font-bold border-b-2 border-white"
+                    : "hover:bg-[#610f0f] text-white"
                     }`}
                 >
                   Home
@@ -115,8 +115,8 @@ export default function Navbar() {
                   <Link
                     href="/organization"
                     className={`px-4 py-3 inline-block transition-colors ${pathname === "/organization"
-                        ? "bg-[#610f0f] text-white font-bold border-b-2 border-white"
-                        : "hover:bg-[#610f0f] text-white"
+                      ? "bg-[#610f0f] text-white font-bold border-b-2 border-white"
+                      : "hover:bg-[#610f0f] text-white"
                       }`}
                   >
                     Organizational Chart
@@ -127,8 +127,8 @@ export default function Navbar() {
                 <Link
                   href="/hotlines"
                   className={`px-4 py-3 inline-block transition-colors ${pathname === "/hotlines"
-                      ? "bg-[#610f0f] text-white font-bold border-b-2 border-white"
-                      : "hover:bg-[#610f0f] text-white"
+                    ? "bg-[#610f0f] text-white font-bold border-b-2 border-white"
+                    : "hover:bg-[#610f0f] text-white"
                     }`}
                 >
                   Emergency Hotlines
@@ -145,8 +145,7 @@ export default function Navbar() {
             </ul>
 
             <div className="text-xs font-medium text-slate-200 flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-              <span className="text-[11px] uppercase tracking-wider font-semibold">24/7 EOC Active Standby</span>
+
             </div>
           </div>
         </div>
@@ -176,11 +175,10 @@ export default function Navbar() {
                 <Link
                   href="/"
                   onClick={() => setMobileMenuOpen(false)}
-                  className={`flex items-center gap-3 px-3.5 py-2.5 rounded-lg transition-colors ${
-                    pathname === "/"
+                  className={`flex items-center gap-3 px-3.5 py-2.5 rounded-lg transition-colors ${pathname === "/"
                       ? "bg-[#7a1313] text-white font-bold"
                       : "text-slate-200 hover:bg-slate-800"
-                  }`}
+                    }`}
                 >
                   <HomeIcon className="w-4 h-4 text-slate-400" />
                   <span>Home</span>
@@ -189,11 +187,10 @@ export default function Navbar() {
                 <Link
                   href="/hotlines"
                   onClick={() => setMobileMenuOpen(false)}
-                  className={`flex items-center gap-3 px-3.5 py-2.5 rounded-lg transition-colors ${
-                    pathname === "/hotlines"
+                  className={`flex items-center gap-3 px-3.5 py-2.5 rounded-lg transition-colors ${pathname === "/hotlines"
                       ? "bg-[#7a1313] text-white font-bold"
                       : "text-slate-200 hover:bg-slate-800"
-                  }`}
+                    }`}
                 >
                   <Phone className="w-4 h-4 text-slate-400" />
                   <span>Emergency Hotlines</span>
@@ -203,11 +200,10 @@ export default function Navbar() {
                   <Link
                     href="/organization"
                     onClick={() => setMobileMenuOpen(false)}
-                    className={`flex items-center gap-3 px-3.5 py-2.5 rounded-lg transition-colors ${
-                      pathname === "/organization"
+                    className={`flex items-center gap-3 px-3.5 py-2.5 rounded-lg transition-colors ${pathname === "/organization"
                         ? "bg-[#7a1313] text-white font-bold"
                         : "text-slate-200 hover:bg-slate-800"
-                    }`}
+                      }`}
                   >
                     <Users className="w-4 h-4 text-slate-400" />
                     <span>Organizational Chart</span>

@@ -15,9 +15,6 @@ export default function WeatherBox() {
           <div className="flex justify-center w-full overflow-hidden">
             <iframe
               src="https://www.meteoblue.com/en/weather/widget/daily/lipa-city_philippines_1706090?geoloc=fixed&days=4&tempunit=CELSIUS&windunit=KILOMETER_PER_HOUR&precipunit=MILLIMETER&coloured=coloured&pictoicon=1&maxtemperature=1&mintemperature=1&windspeed=1&windgust=1&winddirection=1&uv=1&humidity=1&precipitation=1&precipitationprobability=1&spot=1&pressure=0&layout=light"
-              frameBorder={0}
-              scrolling="no"
-              allowTransparency={true}
               sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox"
               style={{ width: "216px", height: "420px", border: "none" }}
               title="Weather Lipa City 4-Day Forecast"
@@ -45,9 +42,6 @@ export default function WeatherBox() {
           <div className="w-full bg-slate-100 rounded border border-slate-200 overflow-hidden">
             <iframe
               src="https://www.meteoblue.com/en/weather/maps/widget/lipa-city_philippines_1706090?windAnimation=1&gust=1&satellite=1&cloudsAndPrecipitation=1&temperature=1&sunshine=1&extremeForecastIndex=1&geoloc=fixed&tempunit=C&windunit=km%252Fh&lengthunit=metric&zoom=5&autowidth=auto"
-              frameBorder={0}
-              scrolling="no"
-              allowTransparency={true}
               sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox"
               style={{ width: "100%", height: "280px", border: "none" }}
               title="Philippine Weather Map"
