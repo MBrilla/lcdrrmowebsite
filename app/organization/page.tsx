@@ -2,7 +2,7 @@
 
 import React, { useState, useMemo } from "react";
 import Link from "next/link";
-import { PAGES } from "@/lib/siteConfig";
+import { PAGES, FEATURES } from "@/lib/siteConfig";
 
 export interface PersonnelItem {
   id: string;
@@ -434,7 +434,7 @@ function PersonnelCard({
             : "border-[#7a1313] w-24 h-32 sm:w-26 sm:h-34"
         }`}
       >
-        {item.image ? (
+        {FEATURES.showPersonnelImages && item.image ? (
           <img
             src={item.image}
             alt={item.name}

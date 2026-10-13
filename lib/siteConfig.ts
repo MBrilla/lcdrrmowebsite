@@ -60,6 +60,9 @@ export const FEATURES = {
   // Chatbot Assistant
   chatbotWidget: true,
 
+  // Personnel Directory
+  showPersonnelImages: false, // Set to true to display staff photos, or false to hide photos and show clean badges/initials
+
   // Footers
   detailedFooter: (PAGE_STAGE as number) >= 2,
 
