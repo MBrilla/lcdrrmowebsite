@@ -10,6 +10,7 @@ export default function LipaLogo({ className = "w-14 h-14" }: { className?: stri
         width={128}
         height={128}
         priority
+        unoptimized
         className="w-full h-full object-contain drop-shadow-sm select-none"
       />
     </div>
