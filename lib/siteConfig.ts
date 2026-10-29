@@ -38,6 +38,15 @@ export const PAGES = {
 
   // 3. Emergency Hotlines (/hotlines) - Full consolidated directory
   hotlines: true,
+
+  // 4. Preparedness & Downloadable Infographics (/preparedness)
+  preparedness: true,
+
+  // 5. Activities & Emergency Response Accomplishments (/activities) - Linked to FB Page
+  activities: true,
+
+  // 6. DILG & DRRM Policy Memorandums & Issuances (/issuances)
+  issuances: true,
 };
 
 /**
@@ -49,6 +58,9 @@ export const FEATURES = {
   pillarsNavLink: true,
   servicesNavLink: (PAGE_STAGE as number) >= 2,
   officialNavLabels: (PAGE_STAGE as number) >= 2,
+  preparednessNavLink: true,
+  activitiesNavLink: true,
+  issuancesNavLink: true,
 
   // Homepage sections
   weatherSection: true,
@@ -56,12 +68,13 @@ export const FEATURES = {
   pillarsSection: true,
   servicesSection: (PAGE_STAGE as number) >= 2,
   heroLiveEocCard: (PAGE_STAGE as number) >= 2,
+  preparednessSection: true,
 
   // Chatbot Assistant
   chatbotWidget: true,
 
   // Personnel Directory
-  showPersonnelImages: false, // Set to true to display staff photos, or false to hide photos and show clean badges/initials
+  showPersonnelImages: true, // Display staff photos with clean uniform headshot borders
 
   // Footers
   detailedFooter: (PAGE_STAGE as number) >= 2,

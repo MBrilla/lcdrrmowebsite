@@ -1,9 +1,10 @@
 import React from "react";
 import Link from "next/link";
-import { PhoneCall } from "lucide-react";
+import { PhoneCall, CloudSun, FileDown, ShieldCheck, ArrowRight } from "lucide-react";
 import LipaLogo from "@/components/LipaLogo";
 import WeatherBox from "@/components/WeatherBox";
 import { PAGES, FEATURES } from "@/lib/siteConfig";
+import WeatherModalTrigger from "@/components/WeatherModalTrigger";
 
 export default function Home() {
   return (
@@ -37,13 +38,24 @@ export default function Home() {
                   </Link>
                 )}
 
-                {FEATURES.weatherSection && (
+                {PAGES.preparedness && (
                   <Link
-                    href="#weather"
-                    className="bg-white/10 hover:bg-white/20 text-white font-semibold text-xs sm:text-sm px-3.5 sm:px-4 py-2.5 rounded border border-white/20 transition-colors"
+                    href="/preparedness"
+                    className="bg-amber-400 hover:bg-amber-300 text-slate-900 font-bold text-xs sm:text-sm px-3.5 sm:px-4 py-2.5 rounded transition-colors shadow-xs inline-flex items-center gap-1.5"
                   >
-                    Weather Updates
+                    <FileDown className="w-4 h-4 text-slate-900" />
+                    <span>Preparedness &amp; Downloads</span>
                   </Link>
+                )}
+
+                {FEATURES.weatherSection && (
+                  <WeatherModalTrigger
+                    className="bg-white/10 hover:bg-white/20 text-white font-semibold text-xs sm:text-sm px-3.5 sm:px-4 py-2.5 rounded border border-white/20 transition-colors inline-flex items-center gap-1.5 cursor-pointer"
+                    title="View Weather & Hazard Bulletin"
+                  >
+                    <CloudSun className="w-4 h-4 text-amber-300" />
+                    <span>Weather Updates</span>
+                  </WeatherModalTrigger>
                 )}
 
                 {FEATURES.pillarsSection && (
@@ -88,12 +100,13 @@ export default function Home() {
             >
               Call Rescue
             </a>
-            <Link
-              href="#weather"
-              className="bg-slate-100 hover:bg-slate-200 text-slate-800 font-semibold text-[11px] py-1.5 px-2.5 rounded border border-slate-200 transition-colors"
+            <WeatherModalTrigger
+              className="bg-slate-100 hover:bg-slate-200 text-slate-800 font-semibold text-[11px] py-1.5 px-2.5 rounded border border-slate-200 transition-colors inline-flex items-center gap-1 cursor-pointer"
+              title="View Weather Updates"
             >
-              Weather &darr;
-            </Link>
+              <CloudSun className="w-3.5 h-3.5 text-[#7a1313]" />
+              <span>Weather</span>
+            </WeatherModalTrigger>
           </div>
         </div>
       </div>
@@ -139,12 +152,12 @@ export default function Home() {
                     <p className="text-slate-600 text-xs leading-relaxed">
                       Continuous monitoring of PAGASA bulletins, rainfall saturation, flood risk, and Taal Volcano seismic/vog advisories.
                     </p>
-                    <a
-                      href="#weather"
-                      className="text-xs font-semibold text-[#7a1313] hover:underline inline-block pt-1"
+                    <WeatherModalTrigger
+                      className="text-xs font-semibold text-[#7a1313] hover:underline inline-flex items-center gap-1 pt-1 cursor-pointer text-left"
+                      title="Open Live Weather & Map Modal"
                     >
                       View Live Weather &amp; Map &rarr;
-                    </a>
+                    </WeatherModalTrigger>
                   </div>
 
                   <div className="p-4 rounded border border-slate-200 bg-white shadow-xs space-y-2 hover:border-[#7a1313] transition-colors">
@@ -207,6 +220,146 @@ export default function Home() {
                       Post-disaster assessments, restoration of public utilities, shelter assistance, psychological first aid, and resilient reconstruction.
                     </p>
                   </div>
+                </div>
+              </section>
+            )}
+
+            {/* Featured Disaster Preparedness Downloadables & IEC Infographics */}
+            {FEATURES.preparednessSection && (
+              <section id="preparedness-preview" className="space-y-4">
+                <div className="bg-[#7a1313] text-white py-2.5 px-4 rounded shadow-xs flex items-center justify-between">
+                  <h2 className="font-bold text-sm sm:text-base tracking-wider uppercase flex items-center gap-2">
+                    <FileDown className="w-4 h-4 text-amber-300" />
+                    <span>Disaster Preparedness &amp; Downloadables</span>
+                  </h2>
+                  {PAGES.preparedness && (
+                    <Link
+                      href="/preparedness"
+                      className="text-xs font-semibold text-amber-200 hover:text-white underline flex items-center gap-1"
+                    >
+                      <span>View All Materials</span>
+                      <ArrowRight className="w-3.5 h-3.5" />
+                    </Link>
+                  )}
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {/* Card 1: PAGASA Rainfall */}
+                  <div className="bg-white border border-slate-200 rounded p-4 shadow-xs space-y-2 hover:border-[#7a1313] transition-colors">
+                    <div className="flex items-center justify-between">
+                      <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-blue-800 text-blue-100">
+                        DOST-PAGASA
+                      </span>
+                      <span className="text-[10px] text-slate-500 font-mono font-bold">Official Poster (JPG)</span>
+                    </div>
+                    <h3 className="font-bold text-slate-900 text-sm">
+                      Color-Coded Rainfall &amp; Flood Warning System
+                    </h3>
+                    <p className="text-slate-600 text-xs leading-relaxed">
+                      Red, Orange, and Yellow rainfall threshold standards, expected hourly volume, and required evacuation actions.
+                    </p>
+                    <div className="pt-2 flex items-center justify-between text-xs border-t border-slate-100">
+                      <span className="text-[11px] text-slate-400">PAGASA Publications</span>
+                      <Link
+                        href="/preparedness"
+                        className="font-bold text-[#7a1313] hover:underline inline-flex items-center gap-1"
+                      >
+                        <span>Download Real Poster &rarr;</span>
+                      </Link>
+                    </div>
+                  </div>
+
+                  {/* Card 2: PHIVOLCS Taal */}
+                  <div className="bg-white border border-slate-200 rounded p-4 shadow-xs space-y-2 hover:border-[#7a1313] transition-colors">
+                    <div className="flex items-center justify-between">
+                      <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-red-800 text-red-100">
+                        DOST-PHIVOLCS
+                      </span>
+                      <span className="text-[10px] text-slate-500 font-mono font-bold">Official Poster (PDF)</span>
+                    </div>
+                    <h3 className="font-bold text-slate-900 text-sm">
+                      Bulkan at mga Panganib Nito &amp; Taal Preparedness
+                    </h3>
+                    <p className="text-slate-600 text-xs leading-relaxed">
+                      Comprehensive volcanic hazards, Base Surges, ashfall, Permanent Danger Zone (PDZ), and Lipa City contingency buffer.
+                    </p>
+                    <div className="pt-2 flex items-center justify-between text-xs border-t border-slate-100">
+                      <span className="text-[11px] text-slate-400">PHIVOLCS IEC Vault</span>
+                      <Link
+                        href="/preparedness"
+                        className="font-bold text-[#7a1313] hover:underline inline-flex items-center gap-1"
+                      >
+                        <span>Download Real Poster &rarr;</span>
+                      </Link>
+                    </div>
+                  </div>
+
+                  {/* Card 3: 72-Hour Go Bag */}
+                  <div className="bg-white border border-slate-200 rounded p-4 shadow-xs space-y-2 hover:border-[#7a1313] transition-colors">
+                    <div className="flex items-center justify-between">
+                      <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-red-800 text-red-100">
+                        DOST-PHIVOLCS
+                      </span>
+                      <span className="text-[10px] text-slate-500 font-mono font-bold">Official Graphic (PNG)</span>
+                    </div>
+                    <h3 className="font-bold text-slate-900 text-sm">
+                      72-Hour Emergency &ldquo;Go Bag&rdquo; Survival Checklist
+                    </h3>
+                    <p className="text-slate-600 text-xs leading-relaxed">
+                      Complete packing checklist for families: 4L water/person/day, rations, first aid, radios, and emergency documents.
+                    </p>
+                    <div className="pt-2 flex items-center justify-between text-xs border-t border-slate-100">
+                      <span className="text-[11px] text-slate-400">PHIVOLCS General Products</span>
+                      <Link
+                        href="/preparedness"
+                        className="font-bold text-[#7a1313] hover:underline inline-flex items-center gap-1"
+                      >
+                        <span>Download Real Graphic &rarr;</span>
+                      </Link>
+                    </div>
+                  </div>
+
+                  {/* Card 4: PHIVOLCS PEIS Intensity Scale */}
+                  <div className="bg-white border border-slate-200 rounded p-4 shadow-xs space-y-2 hover:border-[#7a1313] transition-colors">
+                    <div className="flex items-center justify-between">
+                      <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-red-800 text-red-100">
+                        DOST-PHIVOLCS
+                      </span>
+                      <span className="text-[10px] text-slate-500 font-mono font-bold">20x30 in Poster (JPG)</span>
+                    </div>
+                    <h3 className="font-bold text-slate-900 text-sm">
+                      May Naramdamang Lindol?! PEIS Earthquake Scale
+                    </h3>
+                    <p className="text-slate-600 text-xs leading-relaxed">
+                      Official 20x30 inch poster for PEIS Intensity I to X, ground shaking descriptions, and felt-intensity reporting.
+                    </p>
+                    <div className="pt-2 flex items-center justify-between text-xs border-t border-slate-100">
+                      <span className="text-[11px] text-slate-400">PHIVOLCS General Products</span>
+                      <Link
+                        href="/preparedness"
+                        className="font-bold text-[#7a1313] hover:underline inline-flex items-center gap-1"
+                      >
+                        <span>Download Real Poster &rarr;</span>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-slate-100/80 rounded border border-slate-200 p-3.5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
+                  <div className="flex items-center gap-2">
+                    <ShieldCheck className="w-4 h-4 text-[#7a1313] shrink-0" />
+                    <span className="text-slate-700">
+                      Free for public printing, community bulletin boards, and BDRRMC disaster preparedness seminars.
+                    </span>
+                  </div>
+                  {PAGES.preparedness && (
+                    <Link
+                      href="/preparedness"
+                      className="bg-[#7a1313] hover:bg-[#610f0f] text-white px-3.5 py-1.5 rounded font-bold text-xs transition-colors shrink-0"
+                    >
+                      Browse Full Directory &rarr;
+                    </Link>
+                  )}
                 </div>
               </section>
             )}
@@ -378,6 +531,29 @@ export default function Home() {
                 </div>
               </div>
             </div>
+
+            {/* Widget: Downloadable IEC Materials */}
+            {PAGES.preparedness && (
+              <div className="bg-white border border-slate-200 rounded p-4 shadow-xs space-y-2.5">
+                <div className="flex items-center gap-2 pb-2 border-b border-slate-100">
+                  <FileDown className="w-4 h-4 text-[#7a1313]" />
+                  <span className="text-xs font-bold text-slate-900 uppercase tracking-wide">
+                    IEC Downloadables
+                  </span>
+                </div>
+                <p className="text-xs text-slate-600 leading-relaxed">
+                  Official infographics from DOST-PAGASA, PHIVOLCS, and Lipa CDRRMO. Free for public use and printing.
+                </p>
+                <div className="pt-1">
+                  <Link
+                    href="/preparedness"
+                    className="w-full bg-[#7a1313] hover:bg-[#610f0f] text-white text-center py-2 px-3 rounded text-xs font-bold transition-colors block shadow-2xs"
+                  >
+                    Download Infographics &rarr;
+                  </Link>
+                </div>
+              </div>
+            )}
 
             {/* Widget: Reduced Meteoblue & Weather Widgets (Lipa City Forecast + Wind Map) */}
             {FEATURES.weatherSection && <WeatherBox />}

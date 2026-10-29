@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1020" viewBox="0 0 1200 1020" style="background:#ffffff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <rect width="100%" height="100%" fill="#ffffff" />
+  
+  <!-- Top GOVPH Banner -->
+  <rect width="1200" height="42" fill="#0e274a" />
+  <text x="35" y="26" fill="#ffffff" font-size="13" font-weight="bold" letter-spacing="1">GOVPH &#8226; REPUBLIC OF THE PHILIPPINES &#8226; DEPARTMENT OF SCIENCE AND TECHNOLOGY</text>
+  <text x="1165" y="26" fill="#fef08a" font-size="13" font-weight="bold" text-anchor="end">DOST-PHIVOLCS OFFICIAL PUBLICATION</text>
+
+  <!-- Masthead -->
+  <rect y="42" width="1200" height="110" fill="#7a1313" />
+  <text x="40" y="75" fill="#fecaca" font-size="12" font-weight="bold" letter-spacing="1.5">LIPA CITY DISASTER RISK REDUCTION AND MANAGEMENT OFFICE (LCDRRMO)</text>
+  <text x="40" y="118" fill="#ffffff" font-size="30" font-weight="bold">Taal Volcano Alert Level Scheme &amp; Buffer Zones</text>
+  <text x="1160" y="80" fill="#ffffff" font-size="14" font-weight="bold" text-anchor="end">SOURCE: DOST-PHIVOLCS</text>
+  <text x="1160" y="105" fill="#fef08a" font-size="13" font-weight="bold" text-anchor="end">phivolcs.dost.gov.ph</text>
+  <text x="1160" y="130" fill="#f8fafc" font-size="11" text-anchor="end">Taal Volcano Observatory Network</text>
+
+  <!-- Sub-header -->
+  <rect y="152" width="1200" height="45" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1" />
+  <text x="40" y="180" fill="#334155" font-size="15" font-weight="bold">6-Tier Volcanic Unrest Criteria &#8226; Permanent Danger Zone (PDZ) &#8226; Lipa City Preparedness</text>
+  <text x="1160" y="180" fill="#7a1313" font-size="14" font-weight="bold" text-anchor="end">Geological Hazard Reference</text>
+
+  <!-- 6 Alert Levels -->
+  <!-- Alert 0 -->
+  <g transform="translate(40, 215)">
+    <rect width="1120" height="85" rx="8" fill="#f0fdf4" stroke="#16a34a" stroke-width="2" />
+    <rect width="210" height="85" rx="8" fill="#16a34a" />
+    <text x="105" y="38" fill="#ffffff" font-size="18" font-weight="bold" text-anchor="middle">ALERT LEVEL 0</text>
+    <text x="105" y="60" fill="#dcfce7" font-size="12" font-weight="bold" text-anchor="middle">QUIET / BASELINE</text>
+
+    <text x="235" y="33" fill="#15803d" font-size="15" font-weight="bold">Normal Baseline Status &#8226; No Eruption Foreseen</text>
+    <text x="235" y="55" fill="#1e293b" font-size="13">All monitored geochemical, geophysical, and visual indicators at background levels. Ordinary steam emissions.</text>
+    <text x="235" y="75" fill="#16a34a" font-size="12" font-weight="bold">&#8226; ACTION: Normal everyday activities outside the Permanent Danger Zone (PDZ).</text>
+  </g>
+
+  <!-- Alert 1 -->
+  <g transform="translate(40, 315)">
+    <rect width="1120" height="85" rx="8" fill="#fefce8" stroke="#ca8a04" stroke-width="2" />
+    <rect width="210" height="85" rx="8" fill="#ca8a04" />
+    <text x="105" y="38" fill="#ffffff" font-size="18" font-weight="bold" text-anchor="middle">ALERT LEVEL 1</text>
+    <text x="105" y="60" fill="#fef08a" font-size="12" font-weight="bold" text-anchor="middle">LOW-LEVEL UNREST</text>
+
+    <text x="235" y="33" fill="#854d0e" font-size="15" font-weight="bold">Hydrothermal / Slight Magmatic Unrest</text>
+    <text x="235" y="55" fill="#1e293b" font-size="13">Slight increase in volcanic tremors, elevated SO2 flux, or hydrothermal steam-driven (phreatic) explosions.</text>
+    <text x="235" y="75" fill="#ca8a04" font-size="12" font-weight="bold">&#8226; ACTION: Entry into Taal Volcano Island (TVI) strictly prohibited. Lipa City activates baseline monitoring.</text>
+  </g>
+
+  <!-- Alert 2 -->
+  <g transform="translate(40, 415)">
+    <rect width="1120" height="85" rx="8" fill="#fff7ed" stroke="#ea580c" stroke-width="2" />
+    <rect width="210" height="85" rx="8" fill="#ea580c" />
+    <text x="105" y="38" fill="#ffffff" font-size="18" font-weight="bold" text-anchor="middle">ALERT LEVEL 2</text>
+    <text x="105" y="60" fill="#fed7aa" font-size="12" font-weight="bold" text-anchor="middle">MODERATE UNREST</text>
+
+    <text x="235" y="33" fill="#c2410c" font-size="15" font-weight="bold">Probable Magmatic Intrusion at Depth</text>
+    <text x="235" y="55" fill="#1e293b" font-size="13">Frequent volcanic earthquake swarms, swelling (inflation) of the caldera, elevated water temperatures at Main Crater.</text>
+    <text x="235" y="75" fill="#ea580c" font-size="12" font-weight="bold">&#8226; ACTION: TVI totally cleared of people; Taal Lake activities restricted; Lipa BDRRMCs inspect evacuation centers.</text>
+  </g>
+
+  <!-- Alert 3 -->
+  <g transform="translate(40, 515)">
+    <rect width="1120" height="85" rx="8" fill="#fef2f2" stroke="#dc2626" stroke-width="2" />
+    <rect width="210" height="85" rx="8" fill="#dc2626" />
+    <text x="105" y="38" fill="#ffffff" font-size="18" font-weight="bold" text-anchor="middle">ALERT LEVEL 3</text>
+    <text x="105" y="60" fill="#fecaca" font-size="12" font-weight="bold" text-anchor="middle">MAGMATIC UNREST</text>
+
+    <text x="235" y="33" fill="#b91c1c" font-size="15" font-weight="bold">High Unrest &#8226; Explosive Eruption Probable</text>
+    <text x="235" y="55" fill="#1e293b" font-size="13">Magma extruding towards surface. Sustained harmonic tremors, high SO2 plumes, phreatomagmatic bursts.</text>
+    <text x="235" y="75" fill="#dc2626" font-size="12" font-weight="bold">&#8226; ACTION: Mandatory evacuation of high-risk barangays within 7-km radius; Lipa prepares reception centers.</text>
+  </g>
+
+  <!-- Alert 4 -->
+  <g transform="translate(40, 615)">
+    <rect width="1120" height="85" rx="8" fill="#fdf2f8" stroke="#be185d" stroke-width="2" />
+    <rect width="210" height="85" rx="8" fill="#be185d" />
+    <text x="105" y="38" fill="#ffffff" font-size="18" font-weight="bold" text-anchor="middle">ALERT LEVEL 4</text>
+    <text x="105" y="60" fill="#fbcfe8" font-size="12" font-weight="bold" text-anchor="middle">HAZARDOUS IMMINENT</text>
+
+    <text x="235" y="33" fill="#9d174d" font-size="15" font-weight="bold">Hazardous Eruption Possible Within Hours / Days</text>
+    <text x="235" y="55" fill="#1e293b" font-size="13">Continuous volcanic tremors, intense lava fountaining, ash columns rising kilometers high into atmosphere.</text>
+    <text x="235" y="75" fill="#be185d" font-size="12" font-weight="bold">&#8226; ACTION: Total evacuation within 14-km danger radius; Lipa activates 24/7 Incident Command for evacuee influx.</text>
+  </g>
+
+  <!-- Alert 5 -->
+  <g transform="translate(40, 715)">
+    <rect width="1120" height="95" rx="8" fill="#450a0a" stroke="#7f1d1d" stroke-width="2.5" />
+    <rect width="210" height="95" rx="8" fill="#7f1d1d" />
+    <text x="105" y="42" fill="#ffffff" font-size="18" font-weight="bold" text-anchor="middle">ALERT LEVEL 5</text>
+    <text x="105" y="66" fill="#fca5a5" font-size="12" font-weight="bold" text-anchor="middle">ERUPTION ONGOING</text>
+
+    <text x="235" y="35" fill="#fca5a5" font-size="15" font-weight="bold">Major Hazardous Eruption in Progress</text>
+    <text x="235" y="58" fill="#f8fafc" font-size="13">Pyroclastic density currents (base surges), heavy ballistic tephra fall, extensive volcanic ashfall across CALABARZON.</text>
+    <text x="235" y="80" fill="#fef08a" font-size="12" font-weight="bold">&#8226; ACTION: Full disaster relief and air-filtration protocols; wear N95 respirators; follow Lipa Rescue directives.</text>
+  </g>
+
+  <!-- Bottom Official Footer & Accreditation -->
+  <rect y="845" width="1200" height="175" fill="#0f172a" />
+  <text x="40" y="875" fill="#94a3b8" font-size="12" font-weight="bold">OFFICIAL SOURCE CITATION &amp; LEGAL ACCREDITATION:</text>
+  <text x="40" y="898" fill="#ffffff" font-size="13">Directly sourced and accredited from the official DOST-PHIVOLCS Volcano Monitoring and Eruption Prediction Division (phivolcs.dost.gov.ph).</text>
+  <text x="40" y="918" fill="#cbd5e1" font-size="12">Taal Volcano Observatory Bulletins &#8226; Geologic Disaster Awareness and Preparedness Division (GDAPD) &#8226; R.A. 10121.</text>
+  <text x="40" y="938" fill="#94a3b8" font-size="11">Permanent Danger Zone (PDZ): Taal Volcano Island is permanently restricted by law. Any human presence is unlawful during alert status.</text>
+  
+  <text x="1160" y="885" fill="#38bdf8" font-size="13" font-weight="bold" text-anchor="end">City Government of Lipa &#8226; CDRRMO Operations Center</text>
+  <text x="1160" y="912" fill="#fef08a" font-size="14" font-weight="bold" text-anchor="end">24/7 HOTLINE: 0915-463-5005 &#8226; (043) 756-0127</text>
+  <text x="1160" y="937" fill="#94a3b8" font-size="11" text-anchor="end">Official Public Information, Education and Communication (IEC) Poster</text>
+</svg>

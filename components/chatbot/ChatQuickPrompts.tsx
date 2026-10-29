@@ -10,9 +10,10 @@ interface ChatQuickPromptsProps {
 
 const DEFAULT_PROMPTS: QuickPrompt[] = [
   { id: "1", label: "🚨 Emergency Hotlines", query: "What are the official Lipa City emergency hotlines?" },
-  { id: "2", label: "🌤️ Weather Forecast", query: "What is the weather status in Lipa City?" },
-  { id: "3", label: "📍 Evacuation Centers", query: "Where are the primary evacuation centers in Lipa City?" },
+  { id: "2", label: "🎒 Go Bag & Infographics", query: "What should I pack in a 72-hour Emergency Go Bag and where can I download preparedness infographics?" },
+  { id: "3", label: "🌤️ Weather Forecast", query: "What is the weather status in Lipa City?" },
   { id: "4", label: "🌋 Taal Volcano Advisory", query: "What is the current advisory for Taal Volcano in Lipa?" },
+  { id: "5", label: "📍 Evacuation Centers", query: "Where are the primary evacuation centers in Lipa City?" },
 ];
 
 export default function ChatQuickPrompts({

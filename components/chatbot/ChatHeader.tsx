@@ -27,7 +27,7 @@ export default function ChatHeader({
             <h3 className="text-xs sm:text-sm font-bold tracking-wide leading-tight">
               {botName}
             </h3>
-            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span className="w-2 h-2 rounded-full bg-emerald-400"></span>
           </div>
           <p className="text-[10px] text-slate-200 font-medium">
             {statusText}

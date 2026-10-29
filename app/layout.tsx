@@ -5,6 +5,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ChatbotWidget from "@/components/chatbot/ChatbotWidget";
 import { FEATURES } from "@/lib/siteConfig";
+import { WeatherModalProvider } from "@/components/WeatherModalContext";
+import WeatherModal from "@/components/WeatherModal";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -43,11 +45,15 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-[#fbfbfa] text-slate-800 font-sans selection:bg-[#7a1313] selection:text-white">
-        <Navbar />
-        <main className="flex-1 w-full">{children}</main>
-        <Footer />
-        {FEATURES.chatbotWidget && <ChatbotWidget />}
+        <WeatherModalProvider>
+          <Navbar />
+          <main className="flex-1 w-full">{children}</main>
+          <Footer />
+          <WeatherModal />
+          {FEATURES.chatbotWidget && <ChatbotWidget />}
+        </WeatherModalProvider>
       </body>
     </html>
   );
 }
+

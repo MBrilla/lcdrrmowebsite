@@ -1,12 +1,45 @@
+"use client";
+
 import React from "react";
+import { CloudSun, Maximize2 } from "lucide-react";
+import { useWeatherModal } from "./WeatherModalContext";
 
 export default function WeatherBox() {
+  const { openWeatherModal } = useWeatherModal();
+
   return (
-    <div id="weather" className="space-y-5">
+    <div id="weather" className="space-y-4">
+      {/* Quick Launch Full Modal Button */}
+      <button
+        type="button"
+        onClick={() => openWeatherModal()}
+        className="w-full bg-[#7a1313] hover:bg-[#610f0f] text-white px-3 py-2.5 rounded shadow-xs flex items-center justify-between text-left transition-colors cursor-pointer"
+        title="Open Weather Updates Modal"
+      >
+        <div className="flex items-center gap-2">
+          <CloudSun className="w-4 h-4 text-white" />
+          <span className="text-xs font-bold text-white">
+            Weather Updates &bull; Full View
+          </span>
+        </div>
+        <Maximize2 className="w-3.5 h-3.5 text-white/80" />
+      </button>
+
       {/* Widget 1: Lipa City 4-Day Daily Forecast (Compact Meteoblue) */}
-      <div className="bg-white border border-slate-200 rounded overflow-hidden shadow-xs">
-        <div className="bg-[#7a1313] text-white px-3 py-2 text-center font-bold text-xs uppercase tracking-wider">
-          Weather &bull; Lipa City
+      <div className="bg-white border border-slate-200 rounded overflow-hidden shadow-2xs">
+        <div className="bg-[#7a1313] text-white px-3 py-2 flex items-center justify-between">
+          <span className="font-bold text-xs uppercase tracking-wider">
+            Weather &bull; Lipa City
+          </span>
+          <button
+            type="button"
+            onClick={() => openWeatherModal()}
+            className="p-1 rounded hover:bg-white/15 text-white/80 hover:text-white transition-colors cursor-pointer"
+            title="Expand Full Weather Modal"
+            aria-label="Expand Full Weather Modal"
+          >
+            <Maximize2 className="w-3.5 h-3.5" />
+          </button>
         </div>
         <div className="p-3 flex flex-col items-center">
           <div className="text-[11px] text-slate-500 mb-2 font-medium">
@@ -20,7 +53,7 @@ export default function WeatherBox() {
               title="Weather Lipa City 4-Day Forecast"
             />
           </div>
-          <div className="mt-1 text-center">
+          <div className="mt-2 text-center">
             <a
               href="https://www.meteoblue.com/en/weather/week/lipa-city_philippines_1706090?utm_source=daily_widget&utm_medium=linkus&utm_content=daily&utm_campaign=Weather%2BWidget"
               target="_blank"
@@ -34,9 +67,20 @@ export default function WeatherBox() {
       </div>
 
       {/* Widget 2: Philippine Area Weather & Wind Map (Compact Sidebar View) */}
-      <div className="bg-white border border-slate-200 rounded overflow-hidden shadow-xs">
-        <div className="bg-[#7a1313] text-white px-3 py-2 text-center font-bold text-xs uppercase tracking-wider">
-          Live Weather &amp; Wind Map
+      <div className="bg-white border border-slate-200 rounded overflow-hidden shadow-2xs">
+        <div className="bg-[#7a1313] text-white px-3 py-2 flex items-center justify-between">
+          <span className="font-bold text-xs uppercase tracking-wider">
+            Live Weather &amp; Wind Map
+          </span>
+          <button
+            type="button"
+            onClick={() => openWeatherModal()}
+            className="p-1 rounded hover:bg-white/15 text-white/80 hover:text-white transition-colors cursor-pointer"
+            title="Expand Full Weather Modal"
+            aria-label="Expand Full Weather Modal"
+          >
+            <Maximize2 className="w-3.5 h-3.5" />
+          </button>
         </div>
         <div className="p-2.5">
           <div className="w-full bg-slate-100 rounded border border-slate-200 overflow-hidden">
@@ -48,7 +92,7 @@ export default function WeatherBox() {
             />
           </div>
           <div className="mt-1 flex items-center justify-between px-1 text-[10px] text-slate-400">
-            <span className="sm:hidden">Swipe outside map to scroll</span>
+            <span>Swipe outside map to scroll</span>
             <a
               href="https://www.meteoblue.com/en/weather/maps/lipa-city_philippines_1706090?utm_source=map_widget&utm_medium=linkus&utm_content=map&utm_campaign=Weather%2BWidget"
               target="_blank"
@@ -62,9 +106,8 @@ export default function WeatherBox() {
       </div>
 
       {/* Public Advisory Card */}
-      <div className="bg-white border border-slate-200 rounded p-3 text-xs shadow-xs space-y-1.5">
-        <div className="font-bold text-[#7a1313] uppercase tracking-wide text-[11px] flex items-center gap-1.5">
-          <span className="inline-block w-2 h-2 rounded-full bg-[#7a1313] animate-pulse"></span>
+      <div className="bg-white border border-slate-200 rounded p-3 text-xs shadow-2xs space-y-1.5">
+        <div className="font-bold text-[#7a1313] uppercase tracking-wide text-[11px]">
           Public Safety Advisory
         </div>
         <p className="text-slate-600 leading-relaxed text-[11px]">

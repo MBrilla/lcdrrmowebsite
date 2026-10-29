@@ -3,14 +3,16 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X, PhoneCall, Home as HomeIcon, Phone, Users, CloudSun } from "lucide-react";
+import { Menu, X, PhoneCall, Home as HomeIcon, Phone, Users, CloudSun, FileDown, Activity, FileText } from "lucide-react";
 import LipaLogo from "./LipaLogo";
 import PSTClock from "./PSTClock";
 import { PAGES, FEATURES } from "@/lib/siteConfig";
+import { useWeatherModal } from "./WeatherModalContext";
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const pathname = usePathname();
+  const { openWeatherModal } = useWeatherModal();
 
   return (
     <header className="w-full bg-white border-b border-slate-200 sticky top-0 z-40 shadow-2xs">
@@ -102,7 +104,7 @@ export default function Navbar() {
               <li>
                 <Link
                   href="/"
-                  className={`px-4 py-3 inline-block transition-colors ${pathname === "/"
+                  className={`px-3.5 py-3 inline-block transition-colors ${pathname === "/"
                     ? "bg-[#610f0f] text-white font-bold border-b-2 border-white"
                     : "hover:bg-[#610f0f] text-white"
                     }`}
@@ -110,11 +112,50 @@ export default function Navbar() {
                   Home
                 </Link>
               </li>
+              {PAGES.activities && (
+                <li>
+                  <Link
+                    href="/activities"
+                    className={`px-3.5 py-3 inline-block transition-colors ${pathname === "/activities"
+                      ? "bg-[#610f0f] text-white font-bold border-b-2 border-white"
+                      : "hover:bg-[#610f0f] text-white"
+                      }`}
+                  >
+                    Activities &amp; Accomplishments
+                  </Link>
+                </li>
+              )}
+              {PAGES.issuances && (
+                <li>
+                  <Link
+                    href="/issuances"
+                    className={`px-3.5 py-3 inline-block transition-colors ${pathname === "/issuances"
+                      ? "bg-[#610f0f] text-white font-bold border-b-2 border-white"
+                      : "hover:bg-[#610f0f] text-white"
+                      }`}
+                  >
+                    DILG Issuances
+                  </Link>
+                </li>
+              )}
+              {PAGES.preparedness && (
+                <li>
+                  <Link
+                    href="/preparedness"
+                    className={`px-3.5 py-3 inline-block transition-colors ${pathname === "/preparedness"
+                      ? "bg-[#610f0f] text-white font-bold border-b-2 border-white"
+                      : "hover:bg-[#610f0f] text-white"
+                      }`}
+                  >
+                    Preparedness
+                  </Link>
+                </li>
+              )}
               {PAGES.organization && (
                 <li>
                   <Link
                     href="/organization"
-                    className={`px-4 py-3 inline-block transition-colors ${pathname === "/organization"
+                    className={`px-3.5 py-3 inline-block transition-colors ${pathname === "/organization"
                       ? "bg-[#610f0f] text-white font-bold border-b-2 border-white"
                       : "hover:bg-[#610f0f] text-white"
                       }`}
@@ -126,7 +167,7 @@ export default function Navbar() {
               <li>
                 <Link
                   href="/hotlines"
-                  className={`px-4 py-3 inline-block transition-colors ${pathname === "/hotlines"
+                  className={`px-3.5 py-3 inline-block transition-colors ${pathname === "/hotlines"
                     ? "bg-[#610f0f] text-white font-bold border-b-2 border-white"
                     : "hover:bg-[#610f0f] text-white"
                     }`}
@@ -135,12 +176,15 @@ export default function Navbar() {
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/#weather"
-                  className="px-4 py-3 inline-block transition-colors hover:bg-[#610f0f] text-white"
+                <button
+                  type="button"
+                  onClick={() => openWeatherModal()}
+                  className="px-3.5 py-3 inline-flex items-center gap-1.5 transition-colors hover:bg-[#610f0f] text-white cursor-pointer font-medium"
+                  title="View Live Weather & Hazard Updates"
                 >
-                  Weather Updates
-                </Link>
+                  <CloudSun className="w-4 h-4 text-amber-300" />
+                  <span>Weather Updates</span>
+                </button>
               </li>
             </ul>
 
@@ -167,7 +211,7 @@ export default function Navbar() {
                 href="tel:09154635005"
                 className="flex items-center justify-center gap-2.5 w-full py-3 px-4 rounded-lg bg-red-600 hover:bg-red-700 text-white font-bold text-xs uppercase tracking-wider transition-colors shadow-sm"
               >
-                <PhoneCall className="w-4 h-4 shrink-0 animate-bounce" />
+                <PhoneCall className="w-4 h-4 shrink-0" />
                 <span>Call Lipa Rescue 24/7: 0915-463-5005</span>
               </a>
 
@@ -183,6 +227,48 @@ export default function Navbar() {
                   <HomeIcon className="w-4 h-4 text-slate-400" />
                   <span>Home</span>
                 </Link>
+
+                {PAGES.activities && (
+                  <Link
+                    href="/activities"
+                    onClick={() => setMobileMenuOpen(false)}
+                    className={`flex items-center gap-3 px-3.5 py-2.5 rounded-lg transition-colors ${pathname === "/activities"
+                        ? "bg-[#7a1313] text-white font-bold"
+                        : "text-slate-200 hover:bg-slate-800"
+                      }`}
+                  >
+                    <Activity className="w-4 h-4 text-slate-400" />
+                    <span>Activities &amp; Accomplishments</span>
+                  </Link>
+                )}
+
+                {PAGES.issuances && (
+                  <Link
+                    href="/issuances"
+                    onClick={() => setMobileMenuOpen(false)}
+                    className={`flex items-center gap-3 px-3.5 py-2.5 rounded-lg transition-colors ${pathname === "/issuances"
+                        ? "bg-[#7a1313] text-white font-bold"
+                        : "text-slate-200 hover:bg-slate-800"
+                      }`}
+                  >
+                    <FileText className="w-4 h-4 text-slate-400" />
+                    <span>DILG Issuances</span>
+                  </Link>
+                )}
+
+                {PAGES.preparedness && (
+                  <Link
+                    href="/preparedness"
+                    onClick={() => setMobileMenuOpen(false)}
+                    className={`flex items-center gap-3 px-3.5 py-2.5 rounded-lg transition-colors ${pathname === "/preparedness"
+                        ? "bg-[#7a1313] text-white font-bold"
+                        : "text-slate-200 hover:bg-slate-800"
+                      }`}
+                  >
+                    <FileDown className="w-4 h-4 text-slate-400" />
+                    <span>Preparedness &amp; Downloads</span>
+                  </Link>
+                )}
 
                 <Link
                   href="/hotlines"
@@ -210,14 +296,18 @@ export default function Navbar() {
                   </Link>
                 )}
 
-                <Link
-                  href="/#weather"
-                  onClick={() => setMobileMenuOpen(false)}
-                  className="flex items-center gap-3 px-3.5 py-2.5 rounded-lg text-slate-200 hover:bg-slate-800 transition-colors"
+                <button
+                  type="button"
+                  onClick={() => {
+                    setMobileMenuOpen(false);
+                    openWeatherModal();
+                  }}
+                  className="flex items-center gap-3 px-3.5 py-2.5 rounded-lg text-slate-200 hover:bg-slate-800 transition-colors w-full text-left cursor-pointer"
+                  title="View Live Weather & Hazard Updates"
                 >
-                  <CloudSun className="w-4 h-4 text-slate-400" />
+                  <CloudSun className="w-4 h-4 text-amber-300" />
                   <span>Weather Updates</span>
-                </Link>
+                </button>
               </nav>
 
               <div className="pt-3 border-t border-slate-800 text-[11px] text-slate-400 space-y-1">

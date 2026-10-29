@@ -74,7 +74,7 @@ export default function Footer() {
             )}
           </div>
 
-          {/* Col 3: The 4 Pillars */}
+          {/* Col 3: The 4 Pillars & IEC Downloadables */}
           <div className="space-y-2">
             <h3 className="text-xs uppercase font-bold text-white tracking-wider border-b border-slate-700 pb-1.5">
               DRRM Framework
@@ -85,6 +85,36 @@ export default function Footer() {
               <li>&bull; Disaster Response (Lipa Rescue)</li>
               <li>&bull; Disaster Rehabilitation &amp; Recovery</li>
             </ul>
+            {PAGES.activities && (
+              <div className="pt-2">
+                <Link
+                  href="/activities"
+                  className="text-amber-300 hover:text-white font-semibold underline underline-offset-2 flex items-center gap-1"
+                >
+                  <span>Activities &amp; Emergency Responses &rarr;</span>
+                </Link>
+              </div>
+            )}
+            {PAGES.issuances && (
+              <div className="pt-1">
+                <Link
+                  href="/issuances"
+                  className="text-amber-300 hover:text-white font-semibold underline underline-offset-2 flex items-center gap-1"
+                >
+                  <span>DILG &amp; DRRM Issuances &rarr;</span>
+                </Link>
+              </div>
+            )}
+            {PAGES.preparedness && (
+              <div className="pt-1">
+                <Link
+                  href="/preparedness"
+                  className="text-amber-300 hover:text-white font-semibold underline underline-offset-2 flex items-center gap-1"
+                >
+                  <span>Download IEC Infographics &rarr;</span>
+                </Link>
+              </div>
+            )}
           </div>
 
           {/* Col 4: Partner Portals */}

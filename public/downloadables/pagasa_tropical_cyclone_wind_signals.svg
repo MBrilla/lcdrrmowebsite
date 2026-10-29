@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="980" viewBox="0 0 1200 980" style="background:#ffffff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <rect width="100%" height="100%" fill="#ffffff" />
+  
+  <!-- Top GOVPH Banner -->
+  <rect width="1200" height="42" fill="#0e274a" />
+  <text x="35" y="26" fill="#ffffff" font-size="13" font-weight="bold" letter-spacing="1">GOVPH &#8226; REPUBLIC OF THE PHILIPPINES &#8226; DEPARTMENT OF SCIENCE AND TECHNOLOGY</text>
+  <text x="1165" y="26" fill="#fef08a" font-size="13" font-weight="bold" text-anchor="end">DOST-PAGASA OFFICIAL TCWS PUBLICATION</text>
+
+  <!-- Masthead -->
+  <rect y="42" width="1200" height="110" fill="#7a1313" />
+  <text x="40" y="75" fill="#fecaca" font-size="12" font-weight="bold" letter-spacing="1.5">LIPA CITY DISASTER RISK REDUCTION AND MANAGEMENT OFFICE (LCDRRMO)</text>
+  <text x="40" y="118" fill="#ffffff" font-size="30" font-weight="bold">Tropical Cyclone Wind Signals (TCWS No. 1 to 5)</text>
+  <text x="1160" y="80" fill="#ffffff" font-size="14" font-weight="bold" text-anchor="end">OFFICIAL SOURCE: DOST-PAGASA</text>
+  <text x="1160" y="105" fill="#fef08a" font-size="13" font-weight="bold" text-anchor="end">bagong.pagasa.dost.gov.ph</text>
+  <text x="1160" y="130" fill="#f8fafc" font-size="11" text-anchor="end">24/7 Hotline: 0915-463-5005</text>
+
+  <!-- Sub-header -->
+  <rect y="152" width="1200" height="45" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1" />
+  <text x="40" y="180" fill="#334155" font-size="15" font-weight="bold">Updated National Wind Warning System &#8226; Lead Time, Velocity &amp; Expected Impact</text>
+  <text x="1160" y="180" fill="#7a1313" font-size="14" font-weight="bold" text-anchor="end">Classification: Severe Weather / Typhoons</text>
+
+  <!-- Grid of 5 Signals -->
+  <!-- Signal 1 -->
+  <g transform="translate(40, 215)">
+    <rect width="1120" height="105" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="2" />
+    <rect width="210" height="105" rx="8" fill="#2563eb" />
+    <text x="105" y="45" fill="#ffffff" font-size="20" font-weight="bold" text-anchor="middle">SIGNAL NO. 1</text>
+    <text x="105" y="70" fill="#bfdbfe" font-size="12" font-weight="bold" text-anchor="middle">LEAD TIME: 36 HOURS</text>
+    <text x="105" y="90" fill="#ffffff" font-size="14" font-weight="bold" text-anchor="middle">39 – 61 km/h</text>
+
+    <text x="235" y="38" fill="#1e40af" font-size="16" font-weight="bold">Strong Breeze to Near Gale &#8226; Minimal Threat to Life &amp; Property</text>
+    <text x="235" y="62" fill="#1e293b" font-size="13">Twigs and small branches of trees may be broken. Some banana plants may be tilted. Makeshift light houses damaged.</text>
+    <text x="235" y="85" fill="#2563eb" font-size="13" font-weight="bold">&#8226; ACTION: Inspect house roofs; anchor lightweight yard items; prepare Go Bags; tune in to PAGASA bulletins.</text>
+  </g>
+
+  <!-- Signal 2 -->
+  <g transform="translate(40, 335)">
+    <rect width="1120" height="105" rx="8" fill="#ecfeff" stroke="#0891b2" stroke-width="2" />
+    <rect width="210" height="105" rx="8" fill="#0891b2" />
+    <text x="105" y="45" fill="#ffffff" font-size="20" font-weight="bold" text-anchor="middle">SIGNAL NO. 2</text>
+    <text x="105" y="70" fill="#cffafe" font-size="12" font-weight="bold" text-anchor="middle">LEAD TIME: 24 HOURS</text>
+    <text x="105" y="90" fill="#ffffff" font-size="14" font-weight="bold" text-anchor="middle">62 – 88 km/h</text>
+
+    <text x="235" y="38" fill="#155e75" font-size="16" font-weight="bold">Gale to Gale-Force Winds &#8226; Minor to Moderate Threat</text>
+    <text x="235" y="62" fill="#1e293b" font-size="13">Unroofing of houses made of light materials. Some shrubbery and trees blown down. Significant damage to banana plantations.</text>
+    <text x="235" y="85" fill="#0891b2" font-size="13" font-weight="bold">&#8226; ACTION: Automatic class suspension per DepEd; secure window shutters; charge phones &amp; backup power banks.</text>
+  </g>
+
+  <!-- Signal 3 -->
+  <g transform="translate(40, 455)">
+    <rect width="1120" height="105" rx="8" fill="#fefce8" stroke="#ca8a04" stroke-width="2" />
+    <rect width="210" height="105" rx="8" fill="#ca8a04" />
+    <text x="105" y="45" fill="#ffffff" font-size="20" font-weight="bold" text-anchor="middle">SIGNAL NO. 3</text>
+    <text x="105" y="70" fill="#fef08a" font-size="12" font-weight="bold" text-anchor="middle">LEAD TIME: 18 HOURS</text>
+    <text x="105" y="90" fill="#ffffff" font-size="14" font-weight="bold" text-anchor="middle">89 – 117 km/h</text>
+
+    <text x="235" y="38" fill="#854d0e" font-size="16" font-weight="bold">Storm-Force Winds &#8226; Moderate to Significant Threat</text>
+    <text x="235" y="62" fill="#1e293b" font-size="13">Moderate damage to medium-strength structures. Many trees uprooted. Downed electric power and communication lines.</text>
+    <text x="235" y="85" fill="#ca8a04" font-size="13" font-weight="bold">&#8226; ACTION: Evacuate low-lying river areas and coastal spots; seek sturdy concrete evacuation shelters; stay indoors.</text>
+  </g>
+
+  <!-- Signal 4 -->
+  <g transform="translate(40, 575)">
+    <rect width="1120" height="105" rx="8" fill="#fff7ed" stroke="#ea580c" stroke-width="2" />
+    <rect width="210" height="105" rx="8" fill="#ea580c" />
+    <text x="105" y="45" fill="#ffffff" font-size="20" font-weight="bold" text-anchor="middle">SIGNAL NO. 4</text>
+    <text x="105" y="70" fill="#fed7aa" font-size="12" font-weight="bold" text-anchor="middle">LEAD TIME: 12 HOURS</text>
+    <text x="105" y="90" fill="#ffffff" font-size="14" font-weight="bold" text-anchor="middle">118 – 184 km/h</text>
+
+    <text x="235" y="38" fill="#c2410c" font-size="16" font-weight="bold">Typhoon-Force Winds &#8226; Significant to Severe Threat</text>
+    <text x="235" y="62" fill="#1e293b" font-size="13">Heavy structural damage to roofs, doors, and windows. Widespread power outages. High risk of storm surges in exposed lakeshores.</text>
+    <text x="235" y="85" fill="#ea580c" font-size="13" font-weight="bold">&#8226; ACTION: Mandatory stay-inside protocol; cancel all non-emergency transit; Lipa Rescue in full deployment readiness.</text>
+  </g>
+
+  <!-- Signal 5 -->
+  <g transform="translate(40, 695)">
+    <rect width="1120" height="115" rx="8" fill="#fef2f2" stroke="#991b1b" stroke-width="2.5" />
+    <rect width="210" height="115" rx="8" fill="#991b1b" />
+    <text x="105" y="45" fill="#ffffff" font-size="20" font-weight="bold" text-anchor="middle">SIGNAL NO. 5</text>
+    <text x="105" y="72" fill="#fecaca" font-size="12" font-weight="bold" text-anchor="middle">LEAD TIME: 12 HOURS</text>
+    <text x="105" y="95" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">&#8805; 185 km/h</text>
+
+    <text x="235" y="38" fill="#991b1b" font-size="16" font-weight="bold">Super Typhoon &#8226; Extreme to Catastrophic Threat to Life</text>
+    <text x="235" y="62" fill="#1e293b" font-size="13">Widespread, devastating destruction to high-risk structures. Complete collapse of power and communications grids. Massive tree blowdown.</text>
+    <text x="235" y="90" fill="#991b1b" font-size="13" font-weight="bold">&#8226; ACTION: Total disaster emergency active. Take shelter in heavily reinforced concrete structures away from tall trees and utility poles.</text>
+  </g>
+
+  <!-- Bottom Official Footer & Accreditation -->
+  <rect y="835" width="1200" height="145" fill="#0f172a" />
+  <text x="40" y="865" fill="#94a3b8" font-size="12" font-weight="bold">OFFICIAL CITATION &amp; ACCREDITATION:</text>
+  <text x="40" y="888" fill="#ffffff" font-size="13">Directly sourced and accredited from the official DOST-PAGASA Weather Forecasting Center (bagong.pagasa.dost.gov.ph).</text>
+  <text x="40" y="908" fill="#cbd5e1" font-size="12">Portal: https://bagong.pagasa.dost.gov.ph/weather/tropical-cyclone &#8226; Distributed by Lipa City Disaster Risk Reduction and Management Office.</text>
+  
+  <text x="1160" y="875" fill="#38bdf8" font-size="13" font-weight="bold" text-anchor="end">City Government of Lipa &#8226; CDRRMO Emergency Operations Center</text>
+  <text x="1160" y="902" fill="#fef08a" font-size="14" font-weight="bold" text-anchor="end">24/7 HOTLINE: 0915-463-5005 &#8226; (043) 756-0127</text>
+  <text x="1160" y="927" fill="#94a3b8" font-size="11" text-anchor="end">Official Public Information and Education (IEC) Material</text>
+</svg>

@@ -1,0 +1,42 @@
+name: Auto-Sync Facebook Emergency Dispatches
+
+on:
+  schedule:
+    # Runs automatically every 4 hours (at minute 0)
+    - cron: '0 */4 * * *'
+  # Allows you to trigger the sync manually anytime from the GitHub "Actions" tab
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync-feed:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Sync Facebook Dispatches
+        run: |
+          npm run sync-fb
+
+      - name: Commit and push updated dispatches
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add lib/scrapedFbPosts.json
+          if git diff --staged --quiet; then
+            echo "No new Facebook dispatches found. Everything is up to date."
+          else
+            git commit -m "chore(feed): auto-sync latest Lipa CDRRMO Facebook dispatches [skip ci]"
+            git push origin master
+          fi

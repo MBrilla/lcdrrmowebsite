@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import type { Metadata } from "next";
-import { PAGES, FEATURES } from "@/lib/siteConfig";
+import { PAGES } from "@/lib/siteConfig";
 
 export const metadata: Metadata = {
   title: "Emergency Hotlines | Lipa City Disaster Risk Reduction & Management Office",
