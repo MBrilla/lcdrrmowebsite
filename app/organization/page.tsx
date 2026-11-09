@@ -414,12 +414,12 @@ function PersonnelCard({
     <div
       className={`bg-white border rounded p-3 sm:p-3.5 flex flex-col items-center text-center transition-all hover:shadow-md h-full w-full justify-start ${
         isMayor
-          ? "border-[#c68a18] ring-2 ring-[#c68a18]/40 shadow-sm bg-gradient-to-b from-amber-50/50 via-white to-white"
+          ? "border-2 border-[#c68a18] shadow-xs bg-white"
           : isHead
-          ? "border-[#7a1313] ring-2 ring-[#7a1313]/30 shadow-md bg-gradient-to-b from-red-50/20 via-white to-white"
+          ? "border-2 border-[#7a1313] shadow-xs bg-white"
           : isExecutive
-          ? "border-slate-300 ring-1 ring-slate-200/80 shadow-xs hover:border-[#7a1313]"
-          : "border-slate-200 hover:border-slate-300 shadow-xs"
+          ? "border border-slate-300 shadow-xs hover:border-[#7a1313]"
+          : "border border-slate-200 hover:border-slate-300 shadow-xs"
       }`}
     >
       {/* Uniform 3:4 Headshot Box with Official Border */}
@@ -732,7 +732,7 @@ export default function OrganizationPage() {
             
             {/* TIER 0: City Chief Executive & CDRRMC Chairperson (The Very Top) */}
             <div className="bg-white border-2 border-[#c68a18] rounded p-6 shadow-sm text-center space-y-4 relative overflow-hidden">
-              <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#7a1313] via-[#c68a18] to-[#7a1313]" />
+              <div className="absolute top-0 left-0 right-0 h-1 bg-[#7a1313]" />
 
               <div className="space-y-1">
                 <span className="inline-block text-[10px] sm:text-[11px] font-bold uppercase tracking-widest text-[#7a1313] bg-amber-100 border border-amber-300 px-3 py-0.5 rounded-full shadow-2xs">
@@ -759,7 +759,7 @@ export default function OrganizationPage() {
 
               {/* Connecting Tree Line Downward to Implementing Office */}
               <div className="flex flex-col items-center pt-2">
-                <div className="w-0.5 h-6 bg-gradient-to-b from-[#c68a18] to-[#7a1313]" />
+                <div className="w-0.5 h-6 bg-[#7a1313]" />
                 <span className="text-[10px] uppercase font-bold tracking-wider text-[#7a1313] bg-amber-50 px-3 py-0.5 rounded-full border border-amber-200 shadow-2xs">
                   Implementing Arm &bull; LCDRRMO Department Leadership
                 </span>

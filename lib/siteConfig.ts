@@ -42,10 +42,13 @@ export const PAGES = {
   // 4. Preparedness & Downloadable Infographics (/preparedness)
   preparedness: true,
 
-  // 5. Activities & Emergency Response Accomplishments (/activities) - Linked to FB Page
+  // 5. Activities (/activities) - DRRM Drills, BLS Trainings & Community Programs
   activities: true,
 
-  // 6. DILG & DRRM Policy Memorandums & Issuances (/issuances)
+  // 6. Accomplishments (/accomplishments) - Emergency Responses, Field Clearings & Operations Reports
+  accomplishments: true,
+
+  // 7. DILG & DRRM Policy Memorandums & Issuances (/issuances)
   issuances: true,
 };
 
@@ -60,6 +63,7 @@ export const FEATURES = {
   officialNavLabels: (PAGE_STAGE as number) >= 2,
   preparednessNavLink: true,
   activitiesNavLink: true,
+  accomplishmentsNavLink: true,
   issuancesNavLink: true,
 
   // Homepage sections

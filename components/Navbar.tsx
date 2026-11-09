@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X, PhoneCall, Home as HomeIcon, Phone, Users, CloudSun, FileDown, Activity, FileText } from "lucide-react";
+import { Menu, X, PhoneCall, Home as HomeIcon, Phone, Users, CloudSun, FileDown, Activity, FileText, Award } from "lucide-react";
 import LipaLogo from "./LipaLogo";
 import PSTClock from "./PSTClock";
 import { PAGES, FEATURES } from "@/lib/siteConfig";
@@ -121,7 +121,20 @@ export default function Navbar() {
                       : "hover:bg-[#610f0f] text-white"
                       }`}
                   >
-                    Activities &amp; Accomplishments
+                    Activities
+                  </Link>
+                </li>
+              )}
+              {PAGES.accomplishments && (
+                <li>
+                  <Link
+                    href="/accomplishments"
+                    className={`px-3.5 py-3 inline-block transition-colors ${pathname === "/accomplishments"
+                      ? "bg-[#610f0f] text-white font-bold border-b-2 border-white"
+                      : "hover:bg-[#610f0f] text-white"
+                      }`}
+                  >
+                    Accomplishments
                   </Link>
                 </li>
               )}
@@ -200,7 +213,7 @@ export default function Navbar() {
         <>
           <div
             onClick={() => setMobileMenuOpen(false)}
-            className="fixed inset-0 bg-black/60 z-40 md:hidden backdrop-blur-2xs animate-in fade-in duration-200"
+            className="fixed inset-0 bg-black/60 z-40 md:hidden"
             aria-hidden="true"
           />
 
@@ -238,7 +251,21 @@ export default function Navbar() {
                       }`}
                   >
                     <Activity className="w-4 h-4 text-slate-400" />
-                    <span>Activities &amp; Accomplishments</span>
+                    <span>Activities</span>
+                  </Link>
+                )}
+
+                {PAGES.accomplishments && (
+                  <Link
+                    href="/accomplishments"
+                    onClick={() => setMobileMenuOpen(false)}
+                    className={`flex items-center gap-3 px-3.5 py-2.5 rounded-lg transition-colors ${pathname === "/accomplishments"
+                        ? "bg-[#7a1313] text-white font-bold"
+                        : "text-slate-200 hover:bg-slate-800"
+                      }`}
+                  >
+                    <Award className="w-4 h-4 text-slate-400" />
+                    <span>Accomplishments</span>
                   </Link>
                 )}
 

@@ -119,19 +119,12 @@ export default function ChatbotWidget({
       {!isOpen && (
         <button
           onClick={() => setIsOpen(true)}
-          className="group relative flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#7a1313] hover:bg-[#610f0f] text-white shadow-xl hover:shadow-2xl transition-all duration-200 cursor-pointer border-2 border-white focus:outline-hidden focus:ring-4 focus:ring-red-200"
+          className="group relative flex items-center justify-center w-12 h-12 rounded-full bg-[#7a1313] hover:bg-[#610f0f] text-white shadow-md hover:shadow-lg transition-colors cursor-pointer border-2 border-white focus:outline-hidden"
           aria-label="Open Lipa DRRM Assistant Chatbot"
         >
-          <MessageSquare className="w-5 h-5 sm:w-6 sm:h-6 text-white group-hover:scale-110 transition-transform" />
-
-          {/* Status dot */}
-          <span className="absolute top-0 right-0 flex h-3.5 w-3.5">
-            <span className="relative inline-flex rounded-full h-3.5 w-3.5 bg-emerald-500 border-2 border-white"></span>
-          </span>
-
-          {/* Hover Tooltip */}
-          <span className="hidden sm:block absolute right-16 bg-slate-900 text-white text-[11px] font-semibold py-1 px-2.5 rounded shadow-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
-            Chat with Lipa DRRM AI
+          <MessageSquare className="w-5 h-5 text-white" />
+          <span className="hidden sm:block absolute right-14 bg-slate-900 text-white text-[11px] font-semibold py-1 px-2.5 rounded shadow whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+            DRRM Assistant
           </span>
         </button>
       )}

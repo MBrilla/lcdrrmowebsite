@@ -1,0 +1,695 @@
+[
+  {
+    "id": "act-001",
+    "slug": "city-wide-earthquake-fire-drill-lcnhs",
+    "tab": "activities",
+    "title": "City-Wide Earthquake & Evacuation Simulation Drill Conducted at Lipa City National High School",
+    "date": "October 24, 2026 • 08:30 AM",
+    "dateIso": "2026-10-24T08:30:00",
+    "author": "Research, Planning & Training Division",
+    "division": "Training & Disaster Preparedness Section",
+    "category": "Community Drills",
+    "badgeBg": "bg-blue-50 border-blue-200",
+    "badgeText": "text-blue-800",
+    "location": "Lipa City National High School, Brgy. Poblacion, Lipa City",
+    "barangay": "Poblacion",
+    "coverImage": "/posts/drill-lcnhs.svg",
+    "images": [
+      "/posts/drill-lcnhs.svg"
+    ],
+    "summary": "Over 1,850 students, faculty members, and school disaster coordinators participated in the 4th Quarter Multi-Hazard Earthquake and Fire Drill simulating a 7.2-magnitude West Valley Fault movement.",
+    "content": [
+      "In compliance with National Disaster Risk Reduction and Management Council (NDRRMC) guidelines and DepEd Disaster Preparedness mandates, the Lipa City DRRMO Training Division spearheaded a comprehensive multi-hazard earthquake and fire evacuation drill at Lipa City National High School.",
+      "The simulation tested school-wide adherence to the standard 'Duck, Cover, and Hold' procedure, followed by an orderly evacuation to designated open-field assembly areas. The school achieved complete multi-story building evacuation in 3 minutes and 14 seconds.",
+      "Following the primary evacuation, LCDRRMO Emergency Medical Services (EMS) personnel conducted interactive live demonstrations on Basic Life Support (BLS), Cardiopulmonary Resuscitation (CPR), bandaging techniques for simulated fracture casualties, and safe stretcher transport.",
+      "The exercise concluded with an official debriefing with school administrators, validating exit route signage and updating the campus contingency emergency evacuation map."
+    ],
+    "keyHighlights": [
+      "1,850+ students and educators successfully completed simulated evacuation.",
+      "Campus evacuation time recorded at 3 minutes 14 seconds.",
+      "Conducted practical Basic Life Support & Hands-Only CPR demonstrations.",
+      "Audit of emergency exits and first-aid response kits completed."
+    ],
+    "stats": [
+      {
+        "label": "Participants",
+        "value": "1,850+ Students"
+      },
+      {
+        "label": "Evacuation Time",
+        "value": "3m 14s"
+      },
+      {
+        "label": "Trainers Deployed",
+        "value": "8 Officers"
+      },
+      {
+        "label": "Assembly Area",
+        "value": "School Grounds"
+      }
+    ],
+    "respondingUnits": [
+      "LCDRRMO Research & Training Corps",
+      "Lipa Rescue Alpha EMS Unit",
+      "School DRRM Coordinating Committee"
+    ],
+    "status": "Completed",
+    "featured": true,
+    "published": true
+  },
+  {
+    "id": "act-002",
+    "slug": "taal-volcano-gas-emission-monitoring-western-barangays",
+    "tab": "activities",
+    "title": "Taal Volcano Gas Emission & Air Quality Monitoring in Western Sector Barangays",
+    "date": "October 19, 2026 • 06:00 AM",
+    "dateIso": "2026-10-19T06:00:00",
+    "author": "Operations, Technical & Weather Monitoring Unit",
+    "division": "Technical Warning & Hazard Unit",
+    "category": "Environmental & Weather",
+    "badgeBg": "bg-purple-50 border-purple-200",
+    "badgeText": "text-purple-800",
+    "location": "Barangays Lodlod, San Celestino, and San Salvador, Lipa City",
+    "barangay": "Lodlod",
+    "coverImage": "/posts/taal-monitoring.svg",
+    "images": [
+      "/posts/taal-monitoring.svg"
+    ],
+    "summary": "Routine field gas sampling and ambient Sulfur Dioxide (SO2) air quality checks conducted across high-elevation barangays bordering Taal Lake to ensure public respiratory health.",
+    "content": [
+      "Following an advisory from the Department of Science and Technology - Philippine Institute of Volcanology and Seismology (DOST-PHIVOLCS) regarding continuous low-level degassing from Taal Volcano, the LCDRRMO Technical Warning Division deployed portable air quality monitoring instruments across 6 western barangays.",
+      "Handheld electrochemical sulfur dioxide detectors recorded ambient readings well within the 'Fair to Moderate' range across Barangay Lodlod, San Celestino, and San Salvador, indicating no hazardous volcanic smog (vog) entrapment.",
+      "LCDRRMO field units coordinated with local Barangay Health Stations (BHS) and distributed 5,000 N95 particulate respirators earmarked for high-risk individuals, including elderlies, pregnant women, and citizens with chronic respiratory ailments.",
+      "The 24/7 Operations Center continues round-the-clock liaison with PHIVOLCS Taal Observatory and the Batangas Provincial DRRMO."
+    ],
+    "keyHighlights": [
+      "Real-time Sulfur Dioxide (SO2) gas readings registered in Moderate safety range.",
+      "Distributed 5,000 N95 particulate face masks to health stations and elderlies.",
+      "Direct technical coordination maintained with DOST-PHIVOLCS and CDRRMC.",
+      "Barangay Disaster Risk Reduction teams placed on Level 1 watchful standby."
+    ],
+    "stats": [
+      {
+        "label": "Air Quality Status",
+        "value": "Normal / Fair"
+      },
+      {
+        "label": "Masks Distributed",
+        "value": "5,000 N95"
+      },
+      {
+        "label": "Barangays Inspected",
+        "value": "6 Sectors"
+      },
+      {
+        "label": "Sensor Deployments",
+        "value": "4 Multi-Gas Units"
+      }
+    ],
+    "respondingUnits": [
+      "Operations & Technical Warning Division",
+      "City Health Office Sanitary Inspectors",
+      "Barangay Disaster Committees"
+    ],
+    "status": "Completed",
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "act-003",
+    "slug": "wasar-boat-maintenance-flood-readiness-inspection",
+    "tab": "activities",
+    "title": "Water Search and Rescue (WASAR) Boat Maintenance & Outboard Motor Readiness Inspection",
+    "date": "October 15, 2026 • 09:00 AM",
+    "dateIso": "2026-10-15T09:00:00",
+    "author": "Special Rescue Unit (SRU) & Logistics Division",
+    "division": "Logistics & Maintenance Section",
+    "category": "Logistics & Readiness",
+    "badgeBg": "bg-emerald-50 border-emerald-200",
+    "badgeText": "text-emerald-800",
+    "location": "LCDRRMO Motorpool Base, Marawoy, Lipa City",
+    "barangay": "Marawoy",
+    "coverImage": "/posts/wasar-inspection.svg",
+    "images": [
+      "/posts/wasar-inspection.svg"
+    ],
+    "summary": "Quarterly preventative maintenance, hull pressure testing, and 40HP outboard engine test-runs conducted on all 4 disaster rescue rubber boats and water extraction gear.",
+    "content": [
+      "To guarantee 100% operational readiness ahead of forecast tropical depressions, the LCDRRMO Special Rescue Unit (SRU) and Logistics Division conducted comprehensive preventative maintenance and load testing of all water rescue equipment.",
+      "The inspection covered 4 inflatable rubber search & rescue boats, including fuel mixture flushes, propeller inspection, and 30-minute static test-runs of four 40HP Yamaha outboard motors.",
+      "Technicians also audited life-safety equipment: 120 certified floatation devices (life-vests), 16 river throw bags, heavy-duty utility ropes, and waterproof tactical radios.",
+      "Eight high-volume submersible flood pumps and portable trailer generators were serviced with new spark plugs and oil filters to support rapid deployment in low-lying river areas."
+    ],
+    "keyHighlights": [
+      "All 4 rubber inflatable rescue boats certified 100% mission-ready.",
+      "Audited 120 floatation life vests and 16 river extraction throw lines.",
+      "8 submersible flood dewatering pumps serviced and test-run.",
+      "Emergency fuel stockpile confirmed at 1,200 liters of marine petrol."
+    ],
+    "stats": [
+      {
+        "label": "Boats Inspected",
+        "value": "4 Rubber Units"
+      },
+      {
+        "label": "Outboard Motors",
+        "value": "4 x 40HP"
+      },
+      {
+        "label": "Dewatering Pumps",
+        "value": "8 Submersibles"
+      },
+      {
+        "label": "Readiness Rating",
+        "value": "100% Ready"
+      }
+    ],
+    "respondingUnits": [
+      "Special Rescue Unit (SRU)",
+      "Logistics & Motorpool Division"
+    ],
+    "status": "Completed",
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "act-004",
+    "slug": "family-food-pack-prepositioning-dagatan-evacuation-gym",
+    "tab": "activities",
+    "title": "Relief Goods Pre-positioning & Modular Evacuation Tent Setup at Dagatan Gym",
+    "date": "October 08, 2026 • 10:00 AM",
+    "dateIso": "2026-10-08T10:00:00",
+    "author": "Logistics, Supply & Administrative Division",
+    "division": "Relief Coordination Division",
+    "category": "Logistics & Readiness",
+    "badgeBg": "bg-amber-50 border-amber-200",
+    "badgeText": "text-amber-800",
+    "location": "City Evacuation Center, Brgy. Dagatan, Lipa City",
+    "barangay": "Dagatan",
+    "coverImage": "/posts/relief-dagatan.svg",
+    "images": [
+      "/posts/relief-dagatan.svg"
+    ],
+    "summary": "Joint prepositioning activity with the City Social Welfare and Development Office (CSWDO) assembling 2,500 emergency food packs and erecting modular family disaster tents.",
+    "content": [
+      "In proactive preparation for typhoon seasonal hazards, LCDRRMO logistical staff and CSWDO social workers completed the assembly and pre-positioning of 2,500 family food packs at the City Evacuation Gymnasium in Brgy. Dagatan.",
+      "Each standardized relief kit includes vacuum-sealed NFA rice, protein canned goods, instant cereal rations, potable drinking water containers, and hygiene kits.",
+      "Additionally, the logistics team test-assembled 500 privacy-compliant modular evacuation tents, ensuring sanitized partition areas for vulnerable families, nursing mothers, and senior citizens.",
+      "Barangay Disaster Risk Reduction coordinators from nearby flood-prone zones attended the inventory review and validated priority voucher distribution protocols."
+    ],
+    "keyHighlights": [
+      "2,500 family food packs packaged and stacked on raised wooden pallets.",
+      "500 modular privacy evacuation tents inspected and ready for rapid rollout.",
+      "Established medical staging corner with basic triage beds.",
+      "Validated logistics distribution plan with 18 high-risk barangay captains."
+    ],
+    "stats": [
+      {
+        "label": "Food Packs",
+        "value": "2,500 Kits"
+      },
+      {
+        "label": "Modular Tents",
+        "value": "500 Units"
+      },
+      {
+        "label": "Partner Agency",
+        "value": "CSWDO Lipa"
+      },
+      {
+        "label": "Storage Site",
+        "value": "Dagatan Evac Gym"
+      }
+    ],
+    "respondingUnits": [
+      "LCDRRMO Logistics Division",
+      "City Social Welfare & Development (CSWDO)",
+      "BDRRMC Dagatan Volunteers"
+    ],
+    "status": "Completed",
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "act-005",
+    "slug": "bdrrmc-first-responder-basic-life-support-training",
+    "tab": "activities",
+    "title": "Basic Life Support & First Aid Capacity Workshop for 72 Barangay First Responders",
+    "date": "October 02, 2026 • 08:00 AM",
+    "dateIso": "2026-10-02T08:00:00",
+    "author": "Research, Planning & Training Division",
+    "division": "Community Capacity Section",
+    "category": "Training & BLS",
+    "badgeBg": "bg-blue-50 border-blue-200",
+    "badgeText": "text-blue-800",
+    "location": "Lipa Youth & Cultural Center, Brgy. Marawoy, Lipa City",
+    "barangay": "Marawoy",
+    "coverImage": "/posts/bls-training.svg",
+    "images": [
+      "/posts/bls-training.svg"
+    ],
+    "summary": "A 3-day certified training course equipping 144 barangay tanods and community health workers with life-saving skills in trauma management, bandaging, and triage protocols.",
+    "content": [
+      "A total of 144 barangay first responders representing all 72 barangays of Lipa City completed the intensive 3-day Basic Life Support (BLS) and Standard First Aid Certification Course.",
+      "Led by certified instructors from the LCDRRMO Training Division and accredited DOH-HEMB personnel, participants were rigorously evaluated in hands-on practical scenarios: airway management, chest compressions, pediatric choking response, and fracture immobilization.",
+      "Each participant successfully performed return demonstrations on cardiopulmonary resuscitation using computerized adult and infant manikins.",
+      "Graduating barangays were officially issued standardized emergency trauma jump-kits equipped with sterile gauze, tourniquets, neck braces, and diagnostic blood pressure cuffs."
+    ],
+    "keyHighlights": [
+      "144 barangay personnel certified in DOH-compliant Basic Life Support.",
+      "72 trauma jump-kits distributed to all barangay emergency desks.",
+      "Hands-on drills covering bleeding control, burn dressings, and triage.",
+      "Institutionalizes community-level first response before city ambulance arrival."
+    ],
+    "stats": [
+      {
+        "label": "Certified Trainees",
+        "value": "144 Responders"
+      },
+      {
+        "label": "Barangays Covered",
+        "value": "72 Barangays"
+      },
+      {
+        "label": "Jump Kits Issued",
+        "value": "72 Sets"
+      },
+      {
+        "label": "Training Duration",
+        "value": "3 Days (24 Hours)"
+      }
+    ],
+    "respondingUnits": [
+      "LCDRRMO Training Division",
+      "Department of Health (DOH) Evaluators",
+      "Barangay Disaster Risk Reduction Committees"
+    ],
+    "status": "Completed",
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "act-006",
+    "slug": "pre-typhoon-drainage-clearing-river-inspection",
+    "tab": "activities",
+    "title": "Pre-Typhoon Creek Inspection & Critical Drainage Debris Clearing with City Engineering",
+    "date": "September 26, 2026 • 07:30 AM",
+    "dateIso": "2026-09-26T07:30:00",
+    "author": "Operations & Mitigation Task Force",
+    "division": "Mitigation & Hazard Mapping Section",
+    "category": "Logistics & Readiness",
+    "badgeBg": "bg-emerald-50 border-emerald-200",
+    "badgeText": "text-emerald-800",
+    "location": "Sabang-Lodlod River Tributary & Banay-Banay Crossing",
+    "barangay": "Sabang",
+    "coverImage": "/posts/river-inspection.svg",
+    "images": [
+      "/posts/river-inspection.svg"
+    ],
+    "summary": "Joint hazard mitigation walk-through and mechanical backhoe clearing of silt, fallen branches, and culvert obstructions along primary rainwater outflow tributaries.",
+    "content": [
+      "In coordination with the Lipa City Engineering Office and the City Environment and Natural Resources Office (CENRO), LCDRRMO mitigation officers conducted an ocular hazard inspection along vulnerable riverbanks in Barangays Sabang, Lodlod, and Banay-Banay.",
+      "Heavy equipment crews utilized hydraulic backhoes and manual rake lines to extract approximately 14 metric tons of accumulated silt, drifted bamboo roots, and urban waste from constriction points under major bridges.",
+      "Water level sensor gauges were calibrated along the riverbanks to ensure accurate telemetry broadcasts directly into the 24/7 Operations Center monitoring screens.",
+      "Barangay councils were reminded to strictly enforce anti-illegal dumping ordinances to protect natural water runoff channels."
+    ],
+    "keyHighlights": [
+      "14 metric tons of river debris and silt extracted from critical culverts.",
+      "3 bridge crossings de-clogged ahead of heavy precipitation forecast.",
+      "Calibrated early warning telemetry float gauges in Sabang and Banay-Banay.",
+      "Zero blockages observed during subsequent high-tide rainwater testing."
+    ],
+    "stats": [
+      {
+        "label": "Debris Extracted",
+        "value": "14 Metric Tons"
+      },
+      {
+        "label": "Tributaries Cleared",
+        "value": "3 Waterways"
+      },
+      {
+        "label": "Water Gauges Checked",
+        "value": "5 Stations"
+      },
+      {
+        "label": "Partner Unit",
+        "value": "City Engineering Office"
+      }
+    ],
+    "respondingUnits": [
+      "LCDRRMO Hazard Mitigation Unit",
+      "City Engineering Office",
+      "CENRO Lipa"
+    ],
+    "status": "Completed",
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "acc-001",
+    "slug": "vehicular-incident-response-ayala-highway-balintawak",
+    "tab": "accomplishments",
+    "title": "Vehicular Incident Response & Emergency Medical Transport along Ayala Highway",
+    "date": "October 27, 2026 • 02:45 PM",
+    "dateIso": "2026-10-27T14:45:00",
+    "author": "Lipa Rescue Operations Center",
+    "division": "Emergency Medical Services (EMS) Alpha",
+    "category": "Vehicular Response",
+    "badgeBg": "bg-red-50 border-red-200",
+    "badgeText": "text-red-800",
+    "location": "Pres. J.P. Laurel Highway (Ayala), Brgy. Balintawak, Lipa City",
+    "barangay": "Balintawak",
+    "coverImage": "/posts/vehicular-response.svg",
+    "images": [
+      "/posts/vehicular-response.svg"
+    ],
+    "summary": "Immediate medical triage, cervical collar stabilization, and rapid hospital transport rendered to two motorcycle riders following a vehicular collision in Balintawak.",
+    "content": [
+      "At 14:41H, the Lipa CDRRMO 24/7 Operations Center received an emergency telephone dispatch regarding a two-vehicle collision involving an SUV and a motorcycle along Ayala Highway near Brgy. Balintawak.",
+      "Lipa Rescue Ambulance 02 and Alpha EMS responders were deployed within 90 seconds, arriving at the incident scene at 14:45H (4-minute response time).",
+      "Emergency medical technicians safely stabilized two injured male casualties: one suffering from deep abrasions and right lower leg contusions, and a second complaining of severe lumbar pain. Both patients were secured with cervical collars and spine boards.",
+      "Patients were transported safely under continuous vital signs monitoring to Lipa City District Hospital for definitive radiographic examination and wound treatment.",
+      "The incident scene was cleared within 25 minutes in coordination with the Lipa City Traffic Management Division (TMD) to restore normal northbound vehicular traffic flow."
+    ],
+    "keyHighlights": [
+      "Rapid dispatch interval: ambulance arrived on-scene in 4 minutes.",
+      "Stabilized 2 motorcycle casualties with full spinal protection protocols.",
+      "Patients successfully admitted to Lipa City District Hospital with stable vitals.",
+      "Highway traffic cleared and restored in 25 minutes."
+    ],
+    "stats": [
+      {
+        "label": "Response Time",
+        "value": "4 mins"
+      },
+      {
+        "label": "Patients Stabilized",
+        "value": "2 Casualties"
+      },
+      {
+        "label": "Personnel Deployed",
+        "value": "5 Responders"
+      },
+      {
+        "label": "Hospital Destination",
+        "value": "Lipa District Hospital"
+      }
+    ],
+    "respondingUnits": [
+      "Lipa Rescue Alpha EMS Unit",
+      "Ambulance 02",
+      "Lipa Traffic Management Division"
+    ],
+    "status": "Completed",
+    "featured": true,
+    "published": true
+  },
+  {
+    "id": "acc-002",
+    "slug": "rapid-road-clearing-fallen-tree-marawoy",
+    "tab": "accomplishments",
+    "title": "Rapid Road Clearing Operations & Fallen Tree Removal along Pres. J.P. Laurel Highway",
+    "date": "October 25, 2026 • 09:30 AM",
+    "dateIso": "2026-10-25T09:30:00",
+    "author": "LCDRRMO Clearing & Logistics Team",
+    "division": "Logistics & Rapid Clearing Unit",
+    "category": "Road Clearing",
+    "badgeBg": "bg-amber-50 border-amber-200",
+    "badgeText": "text-amber-800",
+    "location": "Pres. J.P. Laurel Highway, Brgy. Marawoy, Lipa City",
+    "barangay": "Marawoy",
+    "coverImage": "/posts/tree-clearing.svg",
+    "images": [
+      "/posts/tree-clearing.svg"
+    ],
+    "summary": "Debris clearance and mechanical chainsaw bucking of a heavy fallen acacia branch obstructing northbound lanes near City Hall, safely restored in 42 minutes.",
+    "content": [
+      "Following sudden localized squalls and strong wind gusts, a large limb of an aged acacia tree snapped and collapsed across both northbound lanes of Pres. J.P. Laurel Highway near the Marawoy intersection.",
+      "Upon notice from patrolling barangay tanods, the LCDRRMO Clearing Crew was dispatched with the hydraulic boom crane truck, mechanical chainsaws, and safety barriers.",
+      "Clearing teams rapidly sectionalized the fallen trunk into manageable timber logs, cleared tangled overhead telecommunications wires in coordination with BATELEC II linemen, and swept roadway debris.",
+      "Normal two-lane traffic flow was 100% restored in exactly 42 minutes without any reported injuries or vehicle damage."
+    ],
+    "keyHighlights": [
+      "Mechanical clearing accomplished in 42 minutes.",
+      "Zero vehicular damage and zero civilian casualties reported.",
+      "BATELEC II coordinated to verify power line safety before bucking.",
+      "Full two-lane highway traffic restored ahead of peak noon hours."
+    ],
+    "stats": [
+      {
+        "label": "Clearing Duration",
+        "value": "42 mins"
+      },
+      {
+        "label": "Obstruction",
+        "value": "1 Large Acacia Trunk"
+      },
+      {
+        "label": "Lanes Reopened",
+        "value": "2 Lanes (100%)"
+      },
+      {
+        "label": "Heavy Equipment",
+        "value": "Boom Truck & Chainsaws"
+      }
+    ],
+    "respondingUnits": [
+      "LCDRRMO Rapid Clearing Unit",
+      "Lipa Traffic Management Division",
+      "BATELEC II Line Technicians"
+    ],
+    "status": "Completed",
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "acc-003",
+    "slug": "weekly-emergency-response-report-october-23-25",
+    "tab": "accomplishments",
+    "title": "Official Weekend Emergency Response Report: 13 Total Dispatches Handled by Lipa Rescue",
+    "date": "October 26, 2026 • 09:00 AM",
+    "dateIso": "2026-10-26T09:00:00",
+    "author": "Lipa CDRRMO Operations Center",
+    "division": "Executive Operations Summary",
+    "category": "Operations Summary",
+    "badgeBg": "bg-slate-50 border-slate-200",
+    "badgeText": "text-slate-800",
+    "location": "City-Wide Operations (72 Barangays), Lipa City",
+    "barangay": "City-Wide",
+    "coverImage": "/posts/weekly-summary.svg",
+    "images": [
+      "/posts/weekly-summary.svg"
+    ],
+    "summary": "Comprehensive statistical report detailing 13 emergency incidents managed by Lipa Rescue 24/7 over the weekend: 5 medical trauma transports and 8 vehicular collision dispatches.",
+    "content": [
+      "The Lipa City Disaster Risk Reduction and Management Office (LCDRRMO), operating under the leadership of City Mayor Hon. Eric B. Africa, released its verified Weekend Operations Summary covering October 23 to 25, 2026.",
+      "Throughout the 72-hour monitoring window, the 24/7 Operations Center handled 13 verified emergency responses comprising 5 acute medical emergencies (including severe asthma and hypertensive crises) and 8 vehicular collisions.",
+      "Average dispatch-to-arrival interval was clocked at 5.2 minutes across urban and suburban sectors.",
+      "All 13 patients received professional on-scene stabilization, IV hydration or splinting where required, and were safely admitted to local tertiary health institutions including Lipa Medix and Lipa District Hospital."
+    ],
+    "keyHighlights": [
+      "13 emergency dispatch missions executed with zero operational delays.",
+      "5 Acute Medical Incidents + 8 Vehicular Collisions successfully managed.",
+      "Average response time recorded at 5.2 minutes city-wide.",
+      "Zero fatalities reported across all attended weekend incidents."
+    ],
+    "stats": [
+      {
+        "label": "Total Dispatches",
+        "value": "13 Missions"
+      },
+      {
+        "label": "Vehicular Accidents",
+        "value": "8 Incidents"
+      },
+      {
+        "label": "Medical Emergencies",
+        "value": "5 Cases"
+      },
+      {
+        "label": "Avg Response Time",
+        "value": "5.2 mins"
+      }
+    ],
+    "respondingUnits": [
+      "Lipa Rescue Alpha, Bravo & Charlie Crews",
+      "Lipa City Command & Operations Center"
+    ],
+    "status": "Official Report",
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "acc-004",
+    "slug": "residential-fire-incident-standby-medical-sabang",
+    "tab": "accomplishments",
+    "title": "Residential Structure Fire Standby & Oxygen Therapy Support in Brgy. Sabang",
+    "date": "October 22, 2026 • 11:15 PM",
+    "dateIso": "2026-10-22T23:15:00",
+    "author": "Lipa Rescue Bravo Unit",
+    "division": "Emergency Medical & Fire Standby Section",
+    "category": "Fire Standby",
+    "badgeBg": "bg-red-50 border-red-200",
+    "badgeText": "text-red-800",
+    "location": "Sitio Riverside, Brgy. Sabang, Lipa City",
+    "barangay": "Sabang",
+    "coverImage": "/posts/fire-standby.svg",
+    "images": [
+      "/posts/fire-standby.svg"
+    ],
+    "summary": "Joint response with the Bureau of Fire Protection (BFP); provided continuous 24/7 medical standby, oxygen therapy to an elderly resident, and hydration for frontline firefighters.",
+    "content": [
+      "Upon receiving notification of a 1st Alarm residential structure fire in Sitio Riverside, Brgy. Sabang at 23:10H, Lipa Rescue Bravo dispatched Ambulance 01 to establish a forward medical triage post downwind of the incident perimeter.",
+      "While BFP Lipa fire crews attacked the blaze, Lipa Rescue paramedics evaluated evacuated neighborhood residents for smoke inhalation symptoms.",
+      "High-flow oxygen therapy and blood pressure monitoring was administered to a 68-year-old female resident suffering from acute respiratory distress. The patient stabilized on-site without requiring emergency hospitalization.",
+      "First responders also provided cold hydration and vital signs checks for 14 responding firefighters before the fire was officially declared extinguished at 00:45H."
+    ],
+    "keyHighlights": [
+      "Rapid triage post established within 6 minutes of fire alarm dispatch.",
+      "Treated 1 elderly civilian for smoke inhalation via oxygen therapy.",
+      "Provided continuous medical monitoring and hydration for 14 firefighters.",
+      "Zero civilian or firefighter fatalities recorded."
+    ],
+    "stats": [
+      {
+        "label": "Oxygen Therapy",
+        "value": "1 Patient"
+      },
+      {
+        "label": "Firefighters Monitored",
+        "value": "14 Personnel"
+      },
+      {
+        "label": "Casualties",
+        "value": "Zero Fatalities"
+      },
+      {
+        "label": "Partner Agency",
+        "value": "BFP Lipa City"
+      }
+    ],
+    "respondingUnits": [
+      "Lipa Rescue Bravo EMS Unit",
+      "Bureau of Fire Protection (BFP Lipa)",
+      "Lipa City Police Station (PNP)"
+    ],
+    "status": "Completed",
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "acc-005",
+    "slug": "midnight-maternal-emergency-ambulance-dispatch-pinagkawitan",
+    "tab": "accomplishments",
+    "title": "Midnight Emergency Maternal Conveyance during Inclement Rain in Brgy. Pinagkawitan",
+    "date": "October 10, 2026 • 01:10 AM",
+    "dateIso": "2026-10-10T01:10:00",
+    "author": "Lipa Rescue EMS Unit",
+    "division": "Maternal & Emergency Medical Division",
+    "category": "Emergency Medical",
+    "badgeBg": "bg-emerald-50 border-emerald-200",
+    "badgeText": "text-emerald-800",
+    "location": "Sitio Maligaya, Brgy. Pinagkawitan, Lipa City",
+    "barangay": "Pinagkawitan",
+    "coverImage": "/posts/maternal-ems.svg",
+    "images": [
+      "/posts/maternal-ems.svg"
+    ],
+    "summary": "Midnight ambulance dispatch navigating flooded barangay access roads in heavy rainfall, safely transferring a 28-year-old mother in active labor to Lipa Medix delivery suite.",
+    "content": [
+      "At 01:03H, an urgent call was logged through the Lipa Rescue emergency cellular hotline (0915-463-5005) from a concerned father in Sitio Maligaya, Brgy. Pinagkawitan, requesting urgent assistance for his wife experiencing active, high-risk labor pains.",
+      "Ambulance 03 departed the Marawoy Operations Base immediately. Despite heavy downpours and low visibility, the crew reached the rural residence in 7 minutes.",
+      "The on-board nurse and EMT team assessed fetal heart tones, positioned the patient safely on the stretcher, and prepared the sterile emergency delivery kit in case of imminent birth en-route.",
+      "The patient was admitted safely at Lipa Medix Medical Center at 01:34H, where she delivered a healthy baby boy shortly thereafter under obstetric care."
+    ],
+    "keyHighlights": [
+      "Emergency call received at 01:03H; arrival on-scene achieved in 7 minutes.",
+      "Navigated dark, rain-soaked barangay access roads without incident.",
+      "Continuous maternal vitals tracking and sterile delivery kit readied.",
+      "Mother and infant confirmed in safe and healthy condition."
+    ],
+    "stats": [
+      {
+        "label": "Response Interval",
+        "value": "7 mins"
+      },
+      {
+        "label": "Outcome",
+        "value": "Safe Delivery"
+      },
+      {
+        "label": "Ambulance Team",
+        "value": "1 Nurse, 2 EMTs"
+      },
+      {
+        "label": "Destination",
+        "value": "Lipa Medix Medical"
+      }
+    ],
+    "respondingUnits": [
+      "Lipa Rescue EMS Ambulance 03",
+      "Lipa CDRRMO 24/7 Operations Desk"
+    ],
+    "status": "Completed",
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "acc-006",
+    "slug": "quarterly-operations-accomplishment-report-q3-2026",
+    "tab": "accomplishments",
+    "title": "Third Quarter Accomplishment Report: 98.4% On-Target Response Rate Across 72 Barangays",
+    "date": "October 01, 2026 • 10:00 AM",
+    "dateIso": "2026-10-01T10:00:00",
+    "author": "Planning, Logistics & Executive Review Unit",
+    "division": "Executive Operations Section",
+    "category": "Operations Summary",
+    "badgeBg": "bg-slate-50 border-slate-200",
+    "badgeText": "text-slate-800",
+    "location": "LCDRRMO Executive Office, City Hall Complex",
+    "barangay": "Marawoy",
+    "coverImage": "/posts/quarterly-report.svg",
+    "images": [
+      "/posts/quarterly-report.svg"
+    ],
+    "summary": "Comprehensive statistical review highlighting 214 total emergency calls answered, 168 vehicular & medical cases handled, and 12 community preparedness drills conducted in Q3.",
+    "content": [
+      "The Lipa City Disaster Risk Reduction and Management Office has submitted its official 3rd Quarter 2026 Performance and Operational Accomplishment Report to City Mayor Eric B. Africa and the Sangguniang Panlungsod.",
+      "Over the 3-month period from July to September 2026, Lipa Rescue answered 214 emergency calls, achieving an exceptional 98.4% on-target response rate within the national standard 5-to-7 minute benchmark.",
+      "The office conducted 12 community and school multi-hazard simulation drills, certified 210 local volunteers in basic first aid, and cleared 28 fallen trees and hazardous electrical obstructions following severe weather warnings.",
+      "Through proactive prepositioning of 5,000 relief packs and constant weather surveillance, Lipa City maintained a zero-casualty record from localized flooding during seasonal southwest monsoon occurrences."
+    ],
+    "keyHighlights": [
+      "214 emergency calls answered across 72 barangays with 98.4% timeliness rating.",
+      "168 patients treated and safely transported to healthcare facilities.",
+      "12 institutional earthquake and fire simulation drills supervised.",
+      "Zero flood-related casualties maintained during monsoon weather."
+    ],
+    "stats": [
+      {
+        "label": "Total Emergency Calls",
+        "value": "214 Calls"
+      },
+      {
+        "label": "On-Target Response",
+        "value": "98.4%"
+      },
+      {
+        "label": "Drills Supervised",
+        "value": "12 Drills"
+      },
+      {
+        "label": "Volunteers Trained",
+        "value": "210 Citizens"
+      }
+    ],
+    "respondingUnits": [
+      "LCDRRMO Command & Operations Directorate",
+      "Lipa City Disaster Council (CDRRMC)"
+    ],
+    "status": "Official Report",
+    "featured": false,
+    "published": true
+  }
+]

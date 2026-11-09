@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <!-- Solid professional palette with subtle pattern -->
+    <pattern id="grid-bls-training.svg" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#ffffff" stroke-width="0.75" stroke-opacity="0.04"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="675" fill="#1e3a8a"/>
+  <rect width="1200" height="675" fill="url(#grid-bls-training.svg)"/>
+
+  <!-- Left Header Accent Bar -->
+  <rect x="0" y="0" width="16" height="675" fill="#3b82f6"/>
+
+  <!-- Top Masthead Info -->
+  <g transform="translate(60, 55)">
+    <!-- Official Emblem Crest Placeholder Circle -->
+    <circle cx="28" cy="28" r="28" fill="#ffffff" fill-opacity="0.1" stroke="#3b82f6" stroke-width="2"/>
+    <text x="28" y="34" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="900" fill="#ffffff" text-anchor="middle">LIPA</text>
+    
+    <text x="75" y="22" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" letter-spacing="1.5" fill="#ffffff" fill-opacity="0.75">
+      REPUBLIC OF THE PHILIPPINES • CITY GOVERNMENT OF LIPA
+    </text>
+    <text x="75" y="42" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="800" letter-spacing="1" fill="#ffffff">
+      DISASTER RISK REDUCTION AND MANAGEMENT OFFICE (LCDRRMO)
+    </text>
+  </g>
+
+  <!-- Category & Tag Bar -->
+  <g transform="translate(60, 160)">
+    <rect x="0" y="0" width="220" height="34" rx="4" fill="#3b82f6"/>
+    <text x="110" y="22" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="900" letter-spacing="1" fill="#1e1917" text-anchor="middle">
+      TRAINING CORPS
+    </text>
+
+    <text x="240" y="23" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="800" letter-spacing="1.5" fill="#3b82f6">
+      TRAINING & CAPACITY BUILDING
+    </text>
+  </g>
+
+  <!-- Main Headline Title -->
+  <g transform="translate(60, 260)">
+    <text x="0" y="0" font-family="system-ui, -apple-system, sans-serif" font-size="44" font-weight="900" fill="#ffffff" letter-spacing="-0.5">
+      Basic Life Support & First Aid Certifica...
+    </text>
+    
+    <!-- Subtitle / Location -->
+    <text x="0" y="55" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="500" fill="#ffffff" fill-opacity="0.85">
+      144 Barangay First Responders from 72 Barangays Certified
+    </text>
+  </g>
+
+  <!-- Illustration Badge Right Side -->
+  <g transform="translate(920, 240)">
+    <circle cx="80" cy="80" r="110" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.1" stroke-width="2"/>
+    <circle cx="80" cy="80" r="85" fill="#ffffff" fill-opacity="0.08" stroke="#3b82f6" stroke-width="2"/>
+    <g transform="translate(5, 20)">
+      
+        <rect x="40" y="30" width="65" height="55" rx="4" fill="#ffffff" fill-opacity="0.15" stroke="#ffffff" stroke-width="2"/>
+        <line x1="52" y1="45" x2="93" y2="45" stroke="#ffffff" stroke-width="2"/>
+        <line x1="52" y1="55" x2="93" y2="55" stroke="#ffffff" stroke-width="2"/>
+        <line x1="52" y1="65" x2="78" y2="65" stroke="#ffffff" stroke-width="2"/>
+        <circle cx="90" cy="70" r="6" fill="#c68a18"/>
+      
+    </g>
+  </g>
+
+  <!-- Bottom Official Accreditation Bar -->
+  <rect x="0" y="605" width="1200" height="70" fill="#000000" fill-opacity="0.3"/>
+  <g transform="translate(60, 646)">
+    <text x="0" y="0" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#ffffff" fill-opacity="0.9">
+      24/7 Operations Center: (043) 756-0127 • 0915-463-5005 • Radio Net 142.850 MHz
+    </text>
+    <text x="1080" y="0" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="800" fill="#3b82f6" text-anchor="end">
+      OFFICIAL OPERATIONS REPORT
+    </text>
+  </g>
+</svg>

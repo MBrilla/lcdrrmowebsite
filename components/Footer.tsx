@@ -91,7 +91,17 @@ export default function Footer() {
                   href="/activities"
                   className="text-amber-300 hover:text-white font-semibold underline underline-offset-2 flex items-center gap-1"
                 >
-                  <span>Activities &amp; Emergency Responses &rarr;</span>
+                  <span>Activities &amp; Programs &rarr;</span>
+                </Link>
+              </div>
+            )}
+            {PAGES.accomplishments && (
+              <div className="pt-1">
+                <Link
+                  href="/accomplishments"
+                  className="text-amber-300 hover:text-white font-semibold underline underline-offset-2 flex items-center gap-1"
+                >
+                  <span>Accomplishments &amp; Field Rescues &rarr;</span>
                 </Link>
               </div>
             )}

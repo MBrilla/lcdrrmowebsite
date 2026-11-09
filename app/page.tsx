@@ -132,6 +132,12 @@ export default function Home() {
                     <p className="text-slate-600 text-xs leading-relaxed">
                       24/7 rapid response for vehicular incidents, search and retrieval, flood extraction, and critical emergencies across 72 barangays.
                     </p>
+                    <Link
+                      href="/accomplishments"
+                      className="text-xs font-semibold text-[#7a1313] hover:underline inline-flex items-center gap-1 pt-1"
+                    >
+                      <span>View Field Rescues &amp; Accomplishments &rarr;</span>
+                    </Link>
                   </div>
 
                   <div className="p-4 rounded border border-slate-200 bg-white shadow-xs space-y-2 hover:border-[#7a1313] transition-colors">
@@ -142,6 +148,12 @@ export default function Home() {
                     <p className="text-slate-600 text-xs leading-relaxed">
                       Emergency medical patient transport, pre-hospital care, and emergency stabilization to medical centers in Lipa City.
                     </p>
+                    <Link
+                      href="/accomplishments"
+                      className="text-xs font-semibold text-[#7a1313] hover:underline inline-flex items-center gap-1 pt-1"
+                    >
+                      <span>View Medical Dispatch Logs &rarr;</span>
+                    </Link>
                   </div>
 
                   <div className="p-4 rounded border border-slate-200 bg-white shadow-xs space-y-2 hover:border-[#7a1313] transition-colors">
@@ -168,6 +180,12 @@ export default function Home() {
                     <p className="text-slate-600 text-xs leading-relaxed">
                       First aid, Basic Life Support (BLS), earthquake &amp; fire simulation drills, and disaster seminars for schools and barangays.
                     </p>
+                    <Link
+                      href="/activities"
+                      className="text-xs font-semibold text-[#7a1313] hover:underline inline-flex items-center gap-1 pt-1"
+                    >
+                      <span>View Drills &amp; Training Activities &rarr;</span>
+                    </Link>
                   </div>
                 </div>
               </section>
